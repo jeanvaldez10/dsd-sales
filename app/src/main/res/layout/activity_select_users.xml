@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:background="@color/white_pressed_color"
+    style="@style/MatchParent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_50"
+        android:id="@+id/action_bar"
+        android:background="@color/top_banner_color">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50"
+            android:padding="@dimen/dip_15"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icon_left_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/dip_12"
+            android:text="Select Users you want to chat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip_50"
+            android:padding="@dimen/dip_10"
+            android:layout_alignParentRight="true"
+            android:text="DONE"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/btnDone"
+            android:textSize="@dimen/dip_15"/>
+    </RelativeLayout>
+    <ListView
+        android:padding="@dimen/dip_5"
+        android:layout_below="@+id/action_bar"
+        android:id="@+id/list_select_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_select_users"
+        style="@style/CenterProgressBarStyle" />
+</RelativeLayout>

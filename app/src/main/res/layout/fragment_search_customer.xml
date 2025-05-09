@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/button_grey_color">
+		<RelativeLayout
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+			<TextView
+				android:layout_alignBottom="@+id/editKeyword"
+				android:layout_centerInParent="true"
+				android:layout_alignTop="@+id/editKeyword"
+				android:visibility="invisible"
+				android:id="@+id/txtSalesDistrict"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:drawableRight="@drawable/icon_drop_down"
+				android:text="Select Sales District"
+				android:gravity="center_vertical"
+				android:background="@drawable/btn_grey_large"
+				style="@style/Font20NormalBlack" />
+			<LinearLayout
+				android:id="@+id/layoutCustomerNo"
+				android:visibility="invisible"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<EditText
+					android:padding="@dimen/dip_5"
+					android:layout_centerInParent="true"
+					android:id="@+id/editChainNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_5"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:hint="Customer Chain"
+					android:singleLine="true"
+					android:imeOptions="actionSearch"
+					style="@style/Font15NormalBlack" />
+
+				<EditText
+					android:padding="@dimen/dip_5"
+					android:layout_centerInParent="true"
+					android:id="@+id/editCustNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_5"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:hint="Customer Number"
+					android:singleLine="true"
+					android:imeOptions="actionSearch"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<EditText
+				android:padding="@dimen/dip_5"
+				android:layout_centerInParent="true"
+				android:id="@+id/editKeyword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:hint="Keyword"
+				android:singleLine="true"
+				android:imeOptions="actionSearch"
+				style="@style/Font15NormalBlack" />
+		</RelativeLayout>
+		<Button
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_5"
+			android:layout_gravity="center_vertical"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search"
+			android:background="@drawable/btn_button_grey_large" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/txtSearchCustomer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="SEARCH CUSTOMER"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtSearchBy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:text="Search by:"
+			style="@style/Font20NormalBlack" />
+		<TextView
+			android:id="@+id/txtCriteria"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:drawableRight="@drawable/icon_drop_down"
+			android:text="Customer Name"
+			android:gravity="center_vertical"
+			android:background="@drawable/btn_grey_large"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_2"
+		android:layout_marginTop="@dimen/dip_2"
+		android:layout_marginBottom="@dimen/dip_2"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:dividerHeight="@dimen/dip_1"
+			android:divider="@color/split_color" />
+		<TextView 
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			style="@style/Font20NormalGray"
+			android:gravity="center"
+			android:visibility="gone" />
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_alignParentLeft="true"
+			android:drawableStart="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+	</RelativeLayout>
+</LinearLayout>

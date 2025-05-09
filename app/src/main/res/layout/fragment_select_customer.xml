@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/button_grey_color">
+		<Button
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:layout_marginTop="@dimen/dip_5"
+			android:layout_marginBottom="@dimen/dip_5"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search"
+			android:drawablePadding="@dimen/dip_10"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Search here..."
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="SELECT CUSTOMER"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:textAllCaps="true"
+			android:id="@+id/lblPlanForTrip"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="PLAN FOR TRIP"
+			style="@style/Font20NormalBlack" />
+		<CheckBox
+			android:id="@+id/chkShowAll"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="@dimen/dip_5"
+			android:text="Show All"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<dsd.dsdvansales.views.FullDrawerLayout
+		android:id="@+id/drawerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		>
+		<LinearLayout
+			android:id="@+id/drawerFirstLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginRight="@dimen/dip_10"
+			android:orientation="vertical">
+			<com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+				android:id="@+id/listView"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:dividerHeight="0dp"
+				android:divider="@android:color/transparent" />
+			<TextView
+				android:id="@+id/txtNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/drawerSecondLayout"
+			android:paddingRight="@dimen/dip_10"
+			android:background="@color/white_color"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="right"
+			android:orientation="vertical">
+			<com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+				android:id="@+id/detail_listview"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:dividerHeight="0dp"
+				android:divider="@android:color/transparent" />
+			<TextView
+				android:id="@+id/txtDetailNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>
+	</dsd.dsdvansales.views.FullDrawerLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="@dimen/dip_50"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:layout_marginRight="@dimen/dip_20"
+			android:id="@+id/btnRoutific"
+			android:padding="@dimen/dip_5"
+			android:layout_width="@dimen/dip_50"
+			android:layout_height="@dimen/dip_50"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_routific" />
+
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/btnAddCustomer"
+			android:padding="@dimen/dip_5"
+			android:layout_width="@dimen/dip_50"
+			android:layout_height="@dimen/dip_50"
+			android:layout_marginRight="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_add_customer" />
+		<Button
+			android:id="@+id/btnEndTrip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_orange_large"
+			android:text="End Trip"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

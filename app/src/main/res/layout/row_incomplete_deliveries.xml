@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dip_10"
+	android:paddingBottom="@dimen/dip_10">
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_weight="3"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/txtName"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Name"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtCustNo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:text="000"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtReason"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:drawableRight="@drawable/icon_drop_down"
+			android:text="Non delivery reason"
+			android:background="@drawable/btn_grey_large"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/txtCartons"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="0 Cartons"
+			style="@style/Font15BoldBlack" />
+		<TextView
+			android:id="@+id/txtUnits"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10"
+			android:text="0 Units"
+			style="@style/Font15BoldBlack" />
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:visibility="invisible"
+			android:id="@+id/btnPhoto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_photo"
+			android:layout_margin="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_10"
+			/>
+	</LinearLayout>
+</LinearLayout>

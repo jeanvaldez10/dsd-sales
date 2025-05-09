@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" >
+		<shape>
+			<solid android:color="@color/white_pressed_color" />
+			<padding
+				android:top="@dimen/dip_3"
+				android:bottom="@dimen/dip_3"
+				android:left="@dimen/dip_3"
+				android:right="@dimen/dip_3" />
+		</shape>
+	</item>
+	<item android:state_enabled="false">
+		<shape>
+			<solid android:color="@color/white_color" />
+			<padding
+				android:top="@dimen/dip_3"
+				android:bottom="@dimen/dip_3"
+				android:left="@dimen/dip_3"
+				android:right="@dimen/dip_3" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<solid android:color="@color/white_color" />
+			<padding
+				android:top="@dimen/dip_3"
+				android:bottom="@dimen/dip_3"
+				android:left="@dimen/dip_3"
+				android:right="@dimen/dip_3" />
+		</shape>
+	</item>
+</selector>

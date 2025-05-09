@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="ADJUST INVENTORY"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+
+	<TextView
+		android:id="@+id/txtAddStockIn"
+		style="@style/Font15NormalBlackGrey"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_15"
+		android:background="@drawable/table_normal"
+		android:drawableRight="@drawable/icon_check_on"
+		android:drawableTint="@color/color_orange_grey"
+		android:enabled="true"
+		android:gravity="center_vertical"
+		android:text="Add Stock IN" />
+	<TextView
+		android:id="@+id/txtTakeStockOut"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:drawableRight="@drawable/icon_check_off"
+		android:drawableTint="@color/color_orange_grey"
+		android:text="Take Stock OUT"
+		android:gravity="center_vertical"
+		android:background="@drawable/table_normal"
+		style="@style/Font15NormalBlackGrey" />
+	<TextView
+		android:id="@+id/txtInterTruckTransfer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:drawableRight="@drawable/icon_check_off"
+		android:drawableTint="@color/color_orange_grey"
+		android:text="Inter Truck Transfer"
+		android:gravity="center_vertical"
+		android:background="@drawable/table_normal"
+		style="@style/Font15NormalBlackGrey" />
+	<TextView
+		android:id="@+id/txtReason"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_15"
+		android:drawableRight="@drawable/icon_drop_down"
+		android:text="Reason"
+		android:gravity="center_vertical"
+		android:background="@drawable/btn_grey_large"
+		style="@style/Font20NormalBlack" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Select"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

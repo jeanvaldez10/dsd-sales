@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_20"
+		android:gravity="center_horizontal"
+		android:text="CONFIGURATION"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="0dip"
+		android:layout_weight="1" />
+	<EditText
+		android:id="@+id/editFTPServerIP"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:inputType="text"
+		android:imeOptions="actionNext"
+		android:hint="IP Address"
+		android:gravity="center"
+		style="@style/Font20NormalBlack" />
+	<EditText
+		android:id="@+id/editFTPCompanyName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:inputType="text"
+		android:imeOptions="actionNext"
+		android:hint="Company Name"
+		android:gravity="center"
+		style="@style/Font20NormalBlack" />
+	<EditText
+		android:id="@+id/editFTPUserName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:inputType="text"
+		android:imeOptions="actionNext"
+		android:hint="FTP User"
+		android:gravity="center"
+		style="@style/Font20NormalBlack" />
+	<EditText
+		android:id="@+id/editFTPPassword"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:inputType="textPassword"
+		android:imeOptions="actionDone"
+		android:hint="FTP Password"
+		android:gravity="center"
+		style="@style/Font20NormalBlack" />
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="0dip"
+		android:layout_weight="1" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<Button
+			android:layout_centerVertical="true"
+			android:id="@+id/btnSave"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Save"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:padding="@dimen/dip_10"
+		android:background="@color/button_grey_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+		<TextView
+			android:id="@+id/txtCustomerName"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Customer Name"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="PAYMENT COLLECTION"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="@dimen/dip_10">
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_1"
+			android:background="@color/split_color" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+			<TextView
+				android:id="@+id/lblCollectionRequired"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Collection required"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtCollectionRequired"
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="$0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_1"
+			android:layout_marginTop="@dimen/dip_10"
+			android:background="@color/split_color" />
+
+		<LinearLayout
+			android:id="@+id/layoutCash"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+
+			<LinearLayout
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="2">
+
+				<TextView
+					android:id="@+id/lblCash"
+					style="@style/Font15NormalBlack"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:text="Cash" />
+
+				<TextView
+					android:id="@+id/lblCurrencySymbol"
+					style="@style/Font15NormalBlack"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="$" />
+			</LinearLayout>
+
+			<EditText
+				android:id="@+id/editCash"
+				style="@style/Font15NormalBlack"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1"
+				android:gravity="center_vertical|right"
+				android:imeOptions="actionDone"
+				android:inputType="number" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/layoutCheque"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:paddingTop="@dimen/dip_5"
+			android:paddingBottom="@dimen/dip_5"
+			android:background="@drawable/table_normal">
+			<TextView
+				android:id="@+id/lblCheque"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Cheque"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtCheque"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/layoutCard"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_5"
+			android:paddingBottom="@dimen/dip_5"
+			android:background="@drawable/table_normal">
+			<TextView
+				android:id="@+id/lblCard"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Card"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtCard"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/layoutEFT"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:paddingTop="@dimen/dip_5"
+			android:paddingBottom="@dimen/dip_5"
+			android:background="@drawable/table_normal">
+			<TextView
+				android:id="@+id/lblEFT"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="EFT"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtEFT"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_20">
+			<TextView
+				android:id="@+id/lblTotalCollected"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Total collected"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtTotalCollected"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="$0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+			<TextView
+				android:id="@+id/lblTotalRemaining"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Total remaining"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtTotalRemaining"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="$0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1" />
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_5"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/btnBack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dip_10"
+				android:layout_centerVertical="true"
+				android:drawableLeft="@drawable/icon_left_arrow"
+				android:background="@drawable/btn_button_grey_large" />
+
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:layout_centerVertical="true"
+				android:id="@+id/btnDetail"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/dip_10"
+				android:layout_toLeftOf="@+id/btnCompleted"
+				android:layout_gravity="center_vertical"
+				android:layout_alignTop="@+id/btnBack"
+				android:layout_alignBottom="@+id/btnCompleted"
+				android:src="@drawable/icon_detail_collection"
+				android:background="@color/white_color"
+				/>
+
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnPhoto"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_gravity="center_vertical"
+				android:layout_marginRight="@dimen/dip_10"
+				android:layout_toLeftOf="@id/btnDetail"
+				android:background="@color/white_color"
+				android:padding="@dimen/dip_3"
+				android:src="@drawable/icon_photo"
+				android:visibility="visible" />
+
+			<Button
+				android:layout_centerVertical="true"
+				android:id="@+id/btnCompleted"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/btn_orange_large"
+				android:text="Done"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="center_vertical"
+				style="@style/Font20NormalWhite" />
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>

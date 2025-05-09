@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+	<LinearLayout
+		android:id="@+id/layoutMain"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:padding="@dimen/dip_10"
+			android:background="@color/button_grey_color"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/txtCustomerName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Customer Name"
+				style="@style/Font15NormalWhite" />
+		</RelativeLayout>
+	<TextView
+		android:id="@+id/txtOrderEntry"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="ORDER ENTRY"
+		style="@style/Font25BoldGray" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtProduct"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Product"
+			style="@style/Font15NormalBlack" />
+		<EditText
+			android:id="@+id/editItemNo"
+			android:layout_width="0dip"
+			android:layout_weight="3"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:inputType="text"
+			android:imeOptions="actionNext"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtQty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Qty"
+			style="@style/Font15NormalBlack" />
+		<EditText
+			android:id="@+id/editQty"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:singleLine="true"
+			android:inputType="number"
+			android:imeOptions="actionDone"
+			android:maxLength="10"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtDescription"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="Invalid Product"
+			style="@style/Font15NormalBlack" />
+		<Button
+			android:minWidth="@dimen/dip_80"
+			android:id="@+id/btnAdd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:padding="@dimen/dip_10"
+			android:background="@drawable/btn_orange_large"
+			android:text="Add"
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_2"
+		android:layout_margin="@dimen/dip_10"
+		android:background="@color/split_color"
+		/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+		<GridView
+			android:id="@+id/gridView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:horizontalSpacing="0dip"
+			android:numColumns="1"
+			android:stretchMode="columnWidth"
+			android:padding="0dip" />
+		<TextView 
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			style="@style/Font20NormalGray"
+			android:gravity="center"
+			android:visibility="gone" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_2"
+		android:layout_margin="@dimen/dip_10"
+		android:background="@color/split_color"
+		 />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnProductTreeList"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:padding="@dimen/dip_5"
+			android:drawableStart="@drawable/icon_tree"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent"
+			 />
+		<Button
+			android:id="@+id/btnBarcodeScanner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:drawableStart="@drawable/icon_barcode"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent"
+			 />
+		<Button
+			android:id="@+id/btnProductSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dip_20"
+			android:padding="@dimen/dip_5"
+			android:drawableStart="@drawable/icon_search2"
+			android:background="@drawable/btn_white_small" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_2"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color"
+		 />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableStart="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			 />
+		<Button
+			android:id="@+id/btnHistory"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dip_10"
+			android:padding="@dimen/dip_10"
+			android:background="@drawable/btn_orange_large"
+			android:text="History"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnOrderSummary"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:background="@drawable/btn_orange_large"
+			android:enabled="false"
+			android:text="Order Summary"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+
+	</LinearLayout>
+	<include
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		layout="@layout/common_menu" />
+	</RelativeLayout>
+</LinearLayout>

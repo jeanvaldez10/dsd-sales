@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_chat_message_container"
+    style="@style/MessageContainerStyle"
+    tools:gravity="right"
+    tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:id="@+id/layout_message_content_container"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        tools:background="@drawable/bg_outcoming">
+
+
+        <dsd.dsdvansales.chat.MaskedImageView
+            android:id="@+id/image_message_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_100"
+            android:scaleType="centerCrop"
+            app:mask="@drawable/bg_outcoming" />
+
+        <TextView
+            android:id="@+id/text_image_message"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dip_10"
+            android:layout_below="@+id/text_message_author"
+            tools:text="Test message" />
+        <ProgressBar
+            android:id="@+id/progress_message_attachment"
+            style="@style/CenterProgressBarStyle"
+            android:theme="@style/BlueAccent"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/text_message_author"
+            style="@style/MessageAuthorStyle"
+            android:layout_alignParentTop="true"
+            tools:text="User 2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_message_info"
+        style="@style/MessageInfoStyle"
+        tools:text="10:50" />
+</LinearLayout>

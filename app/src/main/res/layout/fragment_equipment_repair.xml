@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:background="@color/button_grey_color"
+        android:padding="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_normal"
+            android:text="Customer Name"
+            style="@style/Font15NormalWhite" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="EQUIPMENT REPAIR"
+        android:textAllCaps="true"
+        style="@style/Font25BoldGray" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dip_10"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Font15BoldGray"
+                    android:id="@+id/lblFault"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fault"/>
+                <TextView
+                    android:id="@+id/txtFault"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:layout_gravity="center_vertical"
+                    android:text="Equipment Repair Reason"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font15NormalBlack" />
+                <TextView
+                    style="@style/Font15BoldGray"
+                    android:id="@+id/lblNotes"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_200"
+                    android:id="@+id/editNotes"
+                    android:gravity="left|top"
+                    style="@style/Font15NormalBlack"
+                    />
+                <TextView
+                    style="@style/Font15BoldGray"
+                    android:id="@+id/lblRepairStatus"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repair Status"/>
+                <TextView
+                    android:id="@+id/txtRepairStatus"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Repair Status"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font15NormalBlack" />
+                <TextView
+                    style="@style/Font15BoldGray"
+                    android:id="@+id/lblRepairType"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repair Type"/>
+                <TextView
+                    android:id="@+id/txtRepairType"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Repair Type"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font15NormalBlack" />
+                <TextView
+                    style="@style/Font15BoldGray"
+                    android:id="@+id/lblRequestedPickupDate"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Requested PickUp Date"/>
+                <TextView
+                    android:id="@+id/txtRequestedPickedUpDate"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Requested PickUp Date"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font15NormalBlack" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:background="@color/black_color"></LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dip_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_left_arrow"
+                android:background="@drawable/btn_button_grey_large" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <dsd.dsdvansales.views.ClickEffectImageView
+                android:id="@+id/btnContactCustomer"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_5"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_contact_customer"
+                />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <dsd.dsdvansales.views.ClickEffectImageView
+                android:id="@+id/btnPhoto"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_5"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_photo"
+                 />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_orange_large"
+                android:text="Confirm"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('PaymentModule-0.6.2-release.aar'))

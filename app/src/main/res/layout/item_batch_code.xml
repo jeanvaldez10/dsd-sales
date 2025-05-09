@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        style="@style/Font15NormalBlack"
+        android:layout_margin="@dimen/dip_5"
+        android:id="@+id/editBatchCode"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    </EditText>
+    <Button
+        android:layout_marginBottom="@dimen/dip_2"
+        android:layout_marginRight="@dimen/dip_5"
+        android:text="Copy"
+        android:id="@+id/btnCopy"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Font15NormalWhite"
+        android:background="@drawable/btn_orange_large">
+    </Button>
+</LinearLayout>

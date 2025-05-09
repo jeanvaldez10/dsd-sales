@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dip_10">
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/lblCard"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Card"
+            style="@style/Font15NormalBlack" />
+        <TextView
+            android:id="@+id/txtCardCnt"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            style="@style/Font15BoldBlack" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtCardTotal"
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="$0.00"
+        android:gravity="right"
+        style="@style/Font15NormalBlack" />
+</LinearLayout>

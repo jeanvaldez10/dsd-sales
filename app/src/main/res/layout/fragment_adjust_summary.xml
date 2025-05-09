@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:gravity="center_horizontal"
+		android:text="ADJUSTMENT SUMMARY"
+		style="@style/Font25BoldGray" />
+	<TextView
+		android:id="@+id/txtLoadStarted"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:text="Load Started at 15:18:30"
+		style="@style/Font15NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:id="@+id/lblYouHaveLoaded"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="You have loaded a total of"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtLoaded"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="15 cartons\n23 units\n3 containers"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:id="@+id/lblLoadTemperature"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:text="Load temperature"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtTemperature"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:drawableRight="@drawable/icon_drop_down"
+			android:layout_gravity="center_vertical"
+			android:text="4.5C"
+			android:background="@drawable/btn_grey_large"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<Button
+		android:id="@+id/btnSignature"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:padding="@dimen/dip_5"
+		android:background="@drawable/btn_white_large"
+		android:text="Signature"
+		style="@style/Font20NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_centerVertical="true"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large"
+			android:layout_alignParentLeft="true"/>
+		<Button
+			android:layout_centerVertical="true"
+			android:id="@+id/btnCompleted"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:background="@drawable/btn_orange_large"
+			android:text="Completed"
+			android:layout_alignParentRight="true"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+
+</LinearLayout>

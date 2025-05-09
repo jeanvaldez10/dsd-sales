@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dip_10"
+	android:paddingBottom="@dimen/dip_10">
+	<TextView
+		android:id="@+id/txtSubject"
+		android:layout_width="0dip"
+		android:layout_weight="5"
+		android:layout_height="wrap_content"
+		android:text="Subject"
+		style="@style/Font15NormalBlack" />
+	<RelativeLayout
+		android:layout_width="0dip"
+		android:layout_weight="2"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/btnCheck"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dip_5"
+			android:layout_alignParentRight="true"
+			android:paddingLeft="@dimen/dip_10"
+			android:paddingRight="@dimen/dip_10"
+			android:paddingTop="@dimen/dip_5"
+			android:paddingBottom="@dimen/dip_5"
+			android:background="@drawable/btn_orange_large"
+			android:text="Check"
+			style="@style/Font15NormalWhite" />
+		<ImageView
+			android:visibility="gone"
+			android:src="@drawable/icon_check"
+			android:id="@+id/imgCheck"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dip_5"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/icon_check" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/dip_10"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="COLLECTIONS BALANCING"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<TextView
+		android:id="@+id/lblDescription"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="During your trip you have collected payments totalling $0.00 from your customers. Confirm you have submitted these funds to the cashier."
+		style="@style/Font15NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/split_color" />
+
+	<ListView
+		android:dividerHeight="0dip"
+		android:divider="@null"
+		android:layout_marginTop="@dimen/dip_20"
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:id="@+id/contentList">
+
+	</ListView>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:id="@+id/btnPrint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_pdf_created"
+			android:background="@drawable/btn_white_medium" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:layout_gravity="center_vertical"
+			android:id="@+id/btnSummary"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_orange_large"
+			android:text="Detail"
+			style="@style/Font20NormalWhite" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:layout_gravity="center_vertical"
+			android:id="@+id/btnConfirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_orange_large"
+			android:text="Confirm"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+	<color name="top_banner_color">#2f2929</color>
+	<color name="split_color">#46260f</color>
+	<color name="transparent_color">@android:color/transparent</color>
+
+	<color name="menu_bg_color">#D06C6C6C</color>
+	<color name="menu_split_color">#FF8A4F25</color>
+	<color name="menu_item_bg_color1">#FF272121</color>
+	<color name="menu_item_bg_color2">#FF1B1716</color>
+
+	<color name="black_color">#FF000000</color>
+	<color name="white_color">#FFFFFFFF</color>
+	<color name="white_pressed_color">#FFECECEC</color>
+	<color name="gray_color">#FF9B9B9B</color>
+	<color name="dark_gray">#888</color>
+	<color name="orange_back_color">#F7941D</color>
+	<color name="orange_pressed_color">#FFF7941D</color>
+	<color name="orange_disabled_color">#FFFFD0AB</color>
+	<color name="orange_text_color">#E67C28</color>
+	<color name="focus_orange_color">#e99d66</color>
+	<color name="focus_orange_back_color">#fbeee5</color>
+	<color name="purple_text_color">#6900d2</color>
+	<color name="red_color">#FFFF0000</color>
+	<color name="red_pressed_color">#FFF1565E</color>
+	<color name="green_color">#FF39B54A</color>
+	<color name="green_pressed_color">#FF0C7B1B</color>
+	<color name="green_disable_color">#FFBEEBC4</color>
+	<color name="blue_color">#FF006098</color>
+	<color name="grey_color">#FFF2F2F2</color>
+	<color name="vehicle_inventory_selected_color">#FF99CC33</color>
+	<color name="vehicle_inventory_normal_color">#FFE6DF5A</color>
+	<color name="slide_background_color">#FFdffffd</color>
+
+	<color name="text_color_primary">#212121</color>
+	<color name="text_color_dark_grey">#6e6e6e</color>
+	<color name="color_blue_qb">#046ad0</color>
+	<color name="selected_list_item_color">#e0e0e0</color>
+	<color name="text_color_medium_grey">#b1b1b1</color>
+
+	<color name="color_green_qb">#4ad24d</color>
+	<color name="color_username_rectangle">#99000000</color>
+	<color name="divider_color">#e0e0e0</color>
+	<color name="outcoming_color">#f7d2ac</color>
+
+	<color name="button_grey_color">#989495</color>
+	<color name="button_pressed_color">#b2b2b2</color>
+
+	<color name="search_back_color">#b7b7b7</color>
+	<color name="search_back_pressed_color">#a7a7a7</color>
+
+	<color name="on_color">#ea781f</color>
+	<color name="off_color">#fbfbfb</color>
+	<color name="border_color">#b2b2b2</color>
+	<color name="white">#ffffff</color>
+</resources>

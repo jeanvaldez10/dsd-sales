@@ -1,0 +1,313 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:padding="@dimen/dip_10"
+		android:background="@color/button_grey_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txtCustomerName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Customer Name"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="CHEQUE DETAILS"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="@dimen/dip_10">
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_1"
+			android:background="@color/split_color" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+			<TextView
+				android:id="@+id/lblCollectionRequired"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Collection required"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtCollectionRequired"
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="$0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+			<TextView
+				android:id="@+id/lblTotalCollected"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Total collected"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtTotalCollected"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10">
+			<TextView
+				android:id="@+id/lblTotalRemaining"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="Total remaining"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtTotalRemaining"
+				android:layout_width="0dip"
+				android:layout_weight="2"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="0.00"
+				android:gravity="right"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_1"
+			android:layout_marginTop="@dimen/dip_10"
+			android:background="@color/split_color" />
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_10">
+					<TextView
+						android:id="@+id/lblBankBranch"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="Bank / Branch BSB"
+						style="@style/Font15NormalBlack" />
+					<AutoCompleteTextView
+						android:id="@+id/autoBankBranch"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:inputType="text"
+						android:imeOptions="actionNext"
+						android:hint=""
+						style="@style/Font15NormalBlack" />
+					<EditText
+						android:id="@+id/editBankBranch"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:inputType="number"
+						android:imeOptions="actionNext"
+						android:visibility="gone"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/lblAccount"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="Account"
+						style="@style/Font15NormalBlack" />
+					<EditText
+						android:id="@+id/editAccount"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:inputType="number"
+						android:imeOptions="actionNext"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView
+						android:id="@+id/lblChequeNumber"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="Cheque Number"
+						style="@style/Font15NormalBlack" />
+					<EditText
+						android:id="@+id/editChequeNumber"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:inputType="number"
+						android:imeOptions="actionNext"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_5">
+					<LinearLayout
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical">
+						<TextView
+							android:id="@+id/lblChequeDate"
+							android:layout_width="0dip"
+							android:layout_weight="1"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:text="Cheque Date"
+							style="@style/Font15NormalBlack" />
+						<Button
+							android:id="@+id/btnPickDate"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:padding="0dip"
+							android:drawableLeft="@drawable/icon_pickdate"
+							android:background="@drawable/btn_white_medium" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/txtChequeDate"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/dip_5"
+						android:layout_gravity="center_vertical"
+						android:padding="@dimen/dip_5"
+						android:background="@drawable/btn_white_large"
+						android:text="Sun 14/09/2014"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_5">
+					<LinearLayout
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical">
+						<TextView
+							android:id="@+id/lblChequeAmount"
+							android:layout_width="0dip"
+							android:layout_weight="1"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:text="Cheque Amount"
+							style="@style/Font15NormalBlack" />
+						<TextView
+							android:id="@+id/lblCurrencySymbol"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:text="$"
+							style="@style/Font15NormalBlack" />
+					</LinearLayout>
+					<EditText
+						android:id="@+id/editChequeAmount"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:inputType="number"
+						android:imeOptions="actionNext"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dip_5">
+					<TextView
+						android:id="@+id/lblARNotes"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="AR Notes"
+						style="@style/Font15NormalBlack" />
+					<EditText
+						android:id="@+id/editARNotes"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="@dimen/dip_10"
+						android:maxLength="20"
+						android:inputType="textCapSentences"
+						android:imeOptions="actionDone"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_10"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/btnBack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dip_10"
+				android:layout_gravity="center_vertical"
+				android:drawableLeft="@drawable/icon_left_arrow"
+				android:background="@drawable/btn_button_grey_large" />
+			<Button
+				android:layout_centerVertical="true"
+				android:id="@+id/btnCompleted"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/dip_10"
+				android:paddingBottom="@dimen/dip_10"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/btn_orange_large"
+				android:text="Done"
+				style="@style/Font20NormalWhite" />
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>

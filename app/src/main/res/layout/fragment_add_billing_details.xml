@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/button_grey_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10"
+        >
+        <TextView
+            android:id="@+id/lblBillingDetails"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Billing Details"
+            style="@style/Font15NormalWhite" />
+        <TextView
+            android:id="@+id/txtTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:text="Trip # 102040507"
+            style="@style/Font15NormalWhite" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="NEW CUSTOMER"
+        style="@style/Font25BoldGray" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_1"
+                android:background="@color/split_color" />
+            <TextView
+                android:id="@+id/lblCompanyTaxID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Company Tax ID"
+                style="@style/Font10NormalGray" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editCompanyTaxID"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    style="@style/Font15NormalBlack" />
+                <dsd.dsdvansales.views.ClickEffectImageView
+                    android:padding="@dimen/dip_5"
+                    android:id="@+id/btnLookup"
+                    android:src="@drawable/icon_search3"
+                    android:layout_width="@dimen/dip_40"
+                    android:layout_height="@dimen/dip_40">
+
+                </dsd.dsdvansales.views.ClickEffectImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblBillingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Billing Name"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editBillingName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <TextView
+                android:id="@+id/lblAddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Address Line 1"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editAddress1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <TextView
+                android:id="@+id/lblAddress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Address Line 2"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editAddress2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5">
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/lblCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:text="City"
+                        style="@style/Font10NormalGray" />
+                    <EditText
+                        android:id="@+id/editCity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_2"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:imeOptions="actionNext"
+                        style="@style/Font15NormalBlack" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/lblState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:text="State"
+                        style="@style/Font10NormalGray" />
+                    <EditText
+                        android:id="@+id/editState"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_2"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        style="@style/Font15NormalBlack" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/lblPostCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:text="Post Code"
+                        style="@style/Font10NormalGray" />
+                    <EditText
+                        android:id="@+id/editPostCode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_2"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        style="@style/Font15NormalBlack" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lblLegalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Legal Name"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editLegalName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                style="@style/Font15NormalBlack" />
+            <TextView
+                android:id="@+id/lblCreditLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="Credit Limit - Proposed"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editCreditLimit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                style="@style/Font15NormalBlack" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_margin="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_left_arrow"
+            android:background="@drawable/btn_button_grey_large" />
+        <View
+            android:layout_height="0dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_10"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_orange_large"
+            android:text="Add"
+            style="@style/Font20NormalWhite" />
+    </LinearLayout>
+</LinearLayout>

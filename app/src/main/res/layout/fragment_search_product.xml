@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/button_grey_color">
+		<EditText
+			android:paddingLeft="@dimen/dip_10"
+			android:paddingRight="@dimen/dip_10"
+			android:id="@+id/editKeyword"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:hint="Keyword"
+			android:singleLine="true"
+			android:imeOptions="actionSearch"
+			style="@style/Font15NormalBlack" />
+		<Button
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_5"
+			android:layout_gravity="center_vertical"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search"
+			android:background="@drawable/btn_button_grey_large" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="SEARCH PRODUCT"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:adjustViewBounds="true"
+			android:layout_gravity="center"
+			android:src="@drawable/icon_filter"
+			android:id="@+id/btnFilter"
+			android:layout_width="@dimen/dip_30"
+			android:layout_height="@dimen/dip_30"/>
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:adjustViewBounds="true"
+			android:layout_gravity="center"
+			android:src="@drawable/icon_list_view_normal"
+			android:id="@+id/btnListView"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_width="@dimen/dip_30"
+			android:layout_height="@dimen/dip_30"/>
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:adjustViewBounds="true"
+			android:layout_gravity="center"
+			android:src="@drawable/icon_grid_view_normal"
+			android:id="@+id/btnGridView"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_width="@dimen/dip_30"
+			android:layout_height="@dimen/dip_30"/>
+		<TextView
+			android:id="@+id/txtSearchBy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:text="Search by:"
+			android:visibility="gone"
+			style="@style/Font20NormalBlack" />
+		<TextView
+			android:id="@+id/txtCriteria"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:drawableRight="@drawable/icon_drop_down"
+			android:text="Product Name"
+			android:gravity="center_vertical"
+			android:background="@drawable/btn_grey_large"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_2"
+		android:layout_marginBottom="@dimen/dip_2"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:divider="@color/split_color"
+			android:dividerHeight="@dimen/dip_1"
+			android:visibility="visible">
+		</ListView>
+
+		<GridView
+			android:id="@+id/gridView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:numColumns="2"
+			android:verticalSpacing="@dimen/dip_10"
+			android:horizontalSpacing="@dimen/dip_10"
+			android:visibility="gone">
+		</GridView>
+
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			style="@style/Font20NormalGray"
+			android:gravity="center"
+			android:visibility="gone" />
+	</LinearLayout>
+	<Button
+		android:id="@+id/btnBack"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dip_10"
+		android:layout_margin="@dimen/dip_10"
+		android:drawableLeft="@drawable/icon_left_arrow"
+		android:background="@drawable/btn_button_grey_large" />
+</LinearLayout>

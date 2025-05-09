@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/button_grey_color">
+		<EditText
+			android:paddingLeft="@dimen/dip_10"
+			android:paddingRight="@dimen/dip_10"
+			android:id="@+id/editKeyword"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_5"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:hint="Keyword"
+			android:singleLine="true"
+			android:imeOptions="actionSearch"
+			style="@style/Font15NormalBlack" />
+		<Button
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_5"
+			android:layout_gravity="center_vertical"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search"
+			android:background="@drawable/btn_button_grey_large" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="FILTER PRODUCT"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_2"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:dividerHeight="0dp"
+			android:divider="@color/transparent_color" />
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			style="@style/Font20NormalGray"
+			android:gravity="center"
+			android:visibility="gone" />
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<Button
+			android:id="@+id/btnClearAllFilters"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:padding="@dimen/dip_10"
+			android:text="Clear ALL Filters"
+			android:background="@drawable/btn_orange_large"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

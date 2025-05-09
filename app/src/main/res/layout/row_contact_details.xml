@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:background="@color/split_color" />
+	<TextView
+		android:id="@+id/lblContactTypeDesc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_5"
+		android:text="Buyer"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:id="@+id/lblContactName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_5"
+		android:text="Contact Name"
+		style="@style/Font10NormalGray" />
+	<EditText
+		android:id="@+id/editContactName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_2"
+		android:maxLength="30"
+		android:singleLine="true"
+		android:inputType="textCapWords"
+		android:imeOptions="actionNext"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:id="@+id/lblContactEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_5"
+		android:text="Contact Email"
+		style="@style/Font10NormalGray" />
+	<EditText
+		android:id="@+id/editContactEmail"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_2"
+		android:maxLength="128"
+		android:singleLine="true"
+		android:inputType="textEmailAddress"
+		android:imeOptions="actionNext"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:id="@+id/lblContactPhone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_5"
+		android:text="Contact Phone"
+		style="@style/Font10NormalGray" />
+	<EditText
+		android:id="@+id/editContactPhone"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_2"
+		android:maxLength="20"
+		android:singleLine="true"
+		android:inputType="phone"
+		android:imeOptions="actionDone"
+		style="@style/Font15NormalBlack" />
+</LinearLayout>

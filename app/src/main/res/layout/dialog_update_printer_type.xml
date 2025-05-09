@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/txtTitle"
+		style="@style/Font25BoldBlack"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_horizontal"
+		android:text="Update Printer Type"
+		android:textAllCaps="true" />
+
+	<TextView
+		android:id="@+id/lblCurrentPrinterType"
+		style="@style/Font20NormalBlack"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="Current Printer Type" />
+	<TextView
+		android:id="@+id/txtCurrentPrinterType"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text=""
+		style="@style/Font20NormalBlack" />
+
+	<TextView
+		android:id="@+id/lblChangeTo"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:text="Change to"
+		style="@style/Font20NormalBlack" />
+
+	<TextView
+		android:id="@+id/txtPrinterType"
+		style="@style/Font20NormalBlack"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@drawable/btn_grey_large"
+		android:drawableRight="@drawable/icon_drop_down"
+		android:gravity="center_vertical"
+		android:text="Printer Type" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnUpdate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Update"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

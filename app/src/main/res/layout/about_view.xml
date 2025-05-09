@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/grey_color"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/top_banner_color"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:background="@drawable/icon_logo"
+			android:layout_gravity="center_vertical"/>
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"/>
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/imgMenu1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:src="@drawable/icon_menu"
+			android:layout_gravity="center_vertical"
+			android:visibility="invisible"/>
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/imgMenu2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:src="@drawable/icon_menu2"
+			android:layout_gravity="center_vertical"
+			android:visibility="invisible"/>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+	<LinearLayout
+		android:id="@+id/layoutMain"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="2" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dip_20"
+			android:layout_marginBottom="@dimen/dip_10"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:layout_marginRight="@dimen/dip_20"
+			android:padding="@dimen/dip_10"
+			android:background="@color/white_color"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/icon_logo" />
+			<TextView
+				android:id="@+id/txtAppVersionName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_10"
+				android:text="v3.0.4"
+				style="@style/Font15BoldBlack" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_10"
+				android:text="DSD Van Sales is designed by:"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Numeric Computer Systems"
+				style="@style/Font15BoldBlack" />
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_30">
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="@drawable/icon_web" />
+				<TextView
+					android:id="@+id/txtWeb"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:layout_gravity="center_vertical"
+					android:text="www.dsdassist.com.au"
+					android:background="@drawable/btn_white_medium"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_10">
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="@drawable/icon_message" />
+				<TextView
+					android:id="@+id/txtEmail"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:layout_gravity="center_vertical"
+					android:text="support@dsdassist"
+					android:background="@drawable/btn_white_medium"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_10">
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="@drawable/icon_call" />
+				<LinearLayout
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:layout_gravity="center_vertical"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/txtPhone1"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="+61 3496 5969"
+						android:background="@drawable/btn_white_medium"
+						style="@style/Font15NormalBlack" />
+					<TextView
+						android:id="@+id/txtPhone2"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="+61 3991 4959"
+						android:background="@drawable/btn_white_medium"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/txtInfo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_15"
+				android:text="Terms of use and pricacy are governed by the agreement between Numeric Computer Systems and the client and our policies made available to the client, and as may be amended from time to time"
+				style="@style/Font10NormalBlack" />
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1" />
+		<Button
+			android:id="@+id/btnExit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:layout_marginBottom="@dimen/dip_20"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:paddingLeft="@dimen/dip_30"
+			android:paddingRight="@dimen/dip_30"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Exit"
+			style="@style/Font20NormalWhite" />
+		</LinearLayout>
+
+		<include
+			layout="@layout/common_menu"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</RelativeLayout>
+</LinearLayout>

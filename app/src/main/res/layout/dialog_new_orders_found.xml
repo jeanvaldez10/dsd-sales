@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="NEW ORDERS FOUND"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<TextView
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:id="@+id/txtMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="3 new Orders have been found\nSelect which ones you will be delivering today"
+		style="@style/Font15NormalBlack" />
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<ListView
+			android:divider="@null"
+			android:dividerHeight="0dip"
+			android:id="@+id/list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Add to Trip"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

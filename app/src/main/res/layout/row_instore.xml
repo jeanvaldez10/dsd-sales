@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dip_10"
+	android:paddingBottom="@dimen/dip_10"
+	android:background="@drawable/table_normal">
+	<TextView
+		android:id="@+id/txtName"
+		android:layout_width="0dip"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:text="Check"
+		style="@style/Font20NormalBlack" />
+	<TextView
+		android:id="@+id/txtPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:text="$0.00"
+		style="@style/Font20NormalBlack" />
+	<ImageView
+		android:id="@+id/imgIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/icon_message" />
+	<GridLayout
+	    android:id="@+id/gridPresold"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:columnCount="4"/>
+	<Button
+		android:id="@+id/btnPresold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:padding="@dimen/dip_5"
+		android:layout_gravity="center_vertical"
+		android:drawableLeft="@drawable/icon_has_presold"
+		android:background="@drawable/btn_white_small" /> 
+<!-- 
+		<Button
+		android:id="@+id/btnPresold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:padding="@dimen/dip_5"
+		android:layout_gravity="center_vertical"
+		android:drawableLeft="@drawable/icon_has_presold"
+		android:background="@drawable/btn_white_small" /> 
+-->	
+	
+</LinearLayout>

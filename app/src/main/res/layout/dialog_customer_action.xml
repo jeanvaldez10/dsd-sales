@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:padding="@dimen/dip_20"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtCustomerName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="customer name"
+		style="@style/Font20NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:id="@+id/layoutDeliverToStore"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@drawable/btn_white_medium">
+		<ImageView
+			android:layout_width="@dimen/dip_10"
+			android:layout_height="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/circle_orange" />
+		<TextView
+			android:id="@+id/txtDeliverToStore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Deliver to store"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutDeliveryInstructions"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_white_medium">
+		<ImageView
+			android:layout_width="@dimen/dip_10"
+			android:layout_height="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/circle_orange" />
+		<TextView
+			android:id="@+id/txtDeliveryInstruction"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Delivery Instructions"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutViewStoreDetails"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_white_medium">
+		<ImageView
+			android:layout_width="@dimen/dip_10"
+			android:layout_height="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/circle_orange" />
+		<TextView
+			android:id="@+id/txtViewStoreDetails"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="View store details"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutUnableToDeliver"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_white_medium">
+		<ImageView
+			android:layout_width="@dimen/dip_10"
+			android:layout_height="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/circle_orange" />
+		<TextView
+			android:id="@+id/txtUnableToDeliver"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Unable to deliver"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutNavigateMeToStore"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_white_medium">
+		<ImageView
+			android:layout_width="@dimen/dip_10"
+			android:layout_height="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/circle_orange" />
+		<TextView
+			android:id="@+id/txtNavigateMeToStore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Navigate me to store"
+			style="@style/Font20NormalBlack" />
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+
+</LinearLayout>

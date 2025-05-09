@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingTop="@dimen/dip_5"
+	android:paddingBottom="@dimen/dip_5"
+	android:background="@drawable/table_normal">
+	<TextView
+		android:id="@+id/txtShortDesc"
+		android:layout_width="0dip"
+		android:layout_weight="20"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_2"
+		android:text="Short Desc"
+		style="@style/Font15NormalBlack"/>
+</LinearLayout>

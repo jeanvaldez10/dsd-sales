@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/layout_filter"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/button_grey_color">
+		<Button
+			android:id="@+id/btnFilterBy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_marginTop="@dimen/dip_5"
+			android:layout_marginBottom="@dimen/dip_5"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search"
+			android:drawablePadding="@dimen/dip_10"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Filter by..."
+			style="@style/Font15NormalWhite" />
+		<View
+			android:layout_width="0dip"
+			android:layout_height="0dip"
+			android:layout_weight="1">
+
+		</View>
+		<TextView
+			android:layout_margin="@dimen/dip_10"
+			android:id="@+id/txtTrip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="Trip # 102040507"
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="LOAD TRUCK"
+		style="@style/Font25BoldGray" />
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	<TextView
+		android:id="@+id/txtPickName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:layout_alignParentLeft="true"
+		android:text=""
+		style="@style/Font20NormalOrange" />
+	</RelativeLayout>
+	
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+		<com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:dividerHeight="0dp"
+			android:divider="@android:color/transparent" />
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			android:gravity="center"
+			android:visibility="gone"
+			style="@style/Font20NormalGray" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnDone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_30"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_orange_large"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:text="Done"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

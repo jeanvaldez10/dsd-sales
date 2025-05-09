@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/dip_5"
+	android:orientation="vertical"
+	android:background="@drawable/table_normal">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/txtCreatedDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Font15BoldBlack"
+						android:text="Thursday 10 January"/>
+					<TextView
+						android:id="@+id/txtTime"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Font15NormalBlack"
+						android:text="14:40 by Run995"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_marginLeft="@dimen/dip_10"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/txtPromotionMessage"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Font15BoldBlack"
+						android:text="Promotion Message"/>
+
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:text="This is a test message."
+				android:id="@+id/txtMessage"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/Font15NormalBlack"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/imgAttachment"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_gravity="center_vertical"
+				android:layout_width="@dimen/dip_30"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:src="@drawable/icon_attachment"/>
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:layout_marginTop="@dimen/dip_5"
+				android:id="@+id/imgDelete"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_gravity="center_vertical"
+				android:layout_width="@dimen/dip_30"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:src="@drawable/icon_delete"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

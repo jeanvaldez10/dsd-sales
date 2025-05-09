@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layoutMenu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bg_color"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_2"
+                android:background="@color/menu_split_color" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_help"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Help"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtAbout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color2"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_about"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="About"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtCommunication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_ftp"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Communication"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtMultiLang"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color2"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_english"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Language"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtMakeDeviceDiscoverable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color2"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_bluetooth"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Make device discoverable"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutMenu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bg_color"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_2"
+                android:background="@color/menu_split_color" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtEndJourney"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_exit"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="End Journey"
+                android:visibility="gone"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_logout"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Logout"
+                style="@style/Font20NormalWhite" />
+            <LinearLayout
+                android:paddingLeft="@dimen/dip_5"
+                android:background="@color/menu_item_bg_color1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgDocuments"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/dip_7"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/dip_50"
+                    android:layout_height="@dimen/dip_50"
+                    android:src="@drawable/icon_terms"
+                    />
+                <dsd.dsdvansales.views.TextViewDrawableSize
+                    android:id="@+id/txtDocuments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/menu_item_bg_color1"
+                    android:paddingTop="@dimen/dip_10"
+                    android:paddingBottom="@dimen/dip_10"
+                    android:paddingRight="@dimen/dip_10"
+                    android:gravity="center_vertical"
+                    android:textColor="@drawable/clickable_textview_white"
+                    android:text="Documents"
+                    style="@style/Font20NormalWhite" />
+            </LinearLayout>
+
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtEndTrip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_end_trip"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="End Trip"
+                style="@style/Font20NormalWhite" />
+
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtChangeDriver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_driver"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Change Driver"
+                style="@style/Font20NormalWhite" />
+
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtChangePrinterType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_printer"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Change Printer Type"
+                style="@style/Font20NormalWhite" />
+
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtVehicleInventory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_sales_target"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Vehicle Inventory"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtPrintDocuments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_pdf_created"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Print Documents"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtSalesTracker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_sales_tracker"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Sales Tracker"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtDiary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_diary"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Customer Diary"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtSetInvoiceEnding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Set Invoice Ending"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:id="@+id/txtWindcaveReader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_windcave"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Change Windcave Reader"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:visibility="gone"
+                android:id="@+id/txtDriverBreak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_break"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Driver Break"
+                style="@style/Font20NormalWhite" />
+            <dsd.dsdvansales.views.TextViewDrawableSize
+                android:visibility="gone"
+                android:id="@+id/txtAddMFA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_item_bg_color1"
+                android:padding="@dimen/dip_10"
+                android:drawableLeft="@drawable/icon_barcode"
+                android:drawablePadding="@dimen/dip_10"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/clickable_textview_white"
+                android:text="Add MFA"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

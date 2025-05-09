@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dip_5"
+	android:background="@drawable/table_normal">
+	<TextView
+		android:id="@+id/txtContactTypeDesc"
+		android:layout_width="0dip"
+		android:layout_weight="2"
+		android:layout_height="wrap_content"
+		android:text="Manager"
+		style="@style/Font15BoldBlack" />
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_weight="5"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/txtContactName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="John Smith"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtContactPhoneNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0411 123 456"
+				style="@style/Font15NormalBlack" />
+			<TextView
+				android:id="@+id/txtContactEmailAddress"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Jsmith@acnd.com"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/btnContactInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_contact_info"
+			android:background="@drawable/btn_white_small" />
+	</LinearLayout>
+</LinearLayout>

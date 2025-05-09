@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:layout_gravity="center"
+		android:id="@+id/txtMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="A break has been enabled"
+		android:gravity="center"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:background="@drawable/btn_white_medium"
+		android:layout_gravity="center"
+		android:drawableLeft="@drawable/icon_break"
+		android:id="@+id/txtCountDownMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="(1 minutes 10 seconds left)"
+		android:gravity="center"
+		style="@style/Font15NormalRed" />
+</LinearLayout>

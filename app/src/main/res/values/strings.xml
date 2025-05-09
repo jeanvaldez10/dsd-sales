@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">DSD Van Sales</string>
+    <string name="version_name">0.0.1</string>
+    <string name="msg_no_data">No data has been found</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="retry">Retry</string>
+    <string name="error_leave_chat">Error loading DSD Chatter users</string>
+    <string name="connection_error">Chat connection has been dropped</string>
+    <string name="chat_info_add_people_error">Add people errors</string>
+    <string name="chat_load_users_error">Load chat users errors</string>
+    <string name="dialogs_deletion_error">Dialog deletion errors</string>
+    <string name="select_users_get_users_error">Getting user Failed</string>
+    <string name="notification_listener_service">notification</string>
+
+    <string name="gatt_server_service_name">BLE Gatt Server Service</string>
+    <string name="gatt_client_service_name">BLE Gatt Client Service</string>
+
+    <string name="gatt_service_description">A background BLE GATT service</string>
+    <string name="gatt_server_service_running_notification">\"Advertising BLE GATT service\"</string>
+    <string name="gatt_client_service_running_notification">\"Managing BLE GATT service\"</string>
+    <string name="value_for_characteristic">Value for characteristic</string>
+    <string name="pair_the_ble_gatt_server_via_settings">Pair the ble-gatt-server via settings</string>
+</resources>

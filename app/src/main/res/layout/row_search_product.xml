@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/dip_5"
+	android:background="@drawable/table_normal">
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_5"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/txtDescription"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Customer Name"
+			style="@style/Font15BoldBlack" />
+		<TextView
+			android:id="@+id/txtItemType"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Item Type"
+			style="@style/Font10NormalBlack" />
+		<TextView
+			android:id="@+id/txtProductGroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Product Group"
+			style="@style/Font10NormalBlack" />
+		<TextView
+			android:id="@+id/txtProductLine"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Product Line"
+			style="@style/Font10NormalBlack" />
+		<TextView
+			android:id="@+id/txtBrand"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Brand"
+			style="@style/Font10NormalBlack" />
+		<TextView
+			android:id="@+id/txtSubBrand"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Sub Brand"
+			style="@style/Font10NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txtStock"
+			style="@style/Font15BoldBlack"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+		</TextView>
+		<Button
+			android:layout_marginTop="@dimen/dip_10"
+			android:id="@+id/btnAdd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:background="@drawable/btn_orange_large"
+			android:text="Add"
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+
+</LinearLayout>

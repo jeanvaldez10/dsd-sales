@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:padding="@dimen/dip_10"
+		android:background="@color/button_grey_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txtTrip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="Trip # 102040507"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="DELIVERY PLAN"
+		style="@style/Font25BoldGray" />
+	<LinearLayout
+		android:layout_margin="@dimen/dip_10"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+		<LinearLayout
+			android:id="@+id/layoutDayNo"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="View"
+				style="@style/Font20NormalBlack"/>
+			<TextView
+				android:textAllCaps="true"
+				android:id="@+id/txtDay"
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:drawableRight="@drawable/icon_drop_down"
+				android:layout_gravity="center_vertical"
+				android:text="TODAY"
+				android:textStyle="bold"
+				android:background="@drawable/btn_grey_large"
+				style="@style/Font15NormalBlack" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<dsd.dsdvansales.views.FullDrawerLayout
+		android:id="@+id/drawer_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginRight="@dimen/dip_10"
+			android:orientation="vertical">
+			<com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+				android:id="@+id/listView"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:dividerHeight="0dp"
+				android:divider="@android:color/transparent" />
+			<TextView
+				android:id="@+id/txtNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>
+		<LinearLayout
+			android:paddingRight="@dimen/dip_10"
+			android:background="@color/white_color"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="right"
+			android:orientation="vertical">
+			<com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+				android:id="@+id/detail_listview"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:dividerHeight="0dp"
+				android:divider="@android:color/transparent" />
+			<TextView
+				android:id="@+id/txtDetailNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>
+	</dsd.dsdvansales.views.FullDrawerLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnKey"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_key"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+
+		<Button
+			android:id="@+id/btnRoutific"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_routific"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnMap"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_map_large"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnCompleted"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_orange_large"
+			android:padding="@dimen/dip_10"
+			android:text="Completed"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

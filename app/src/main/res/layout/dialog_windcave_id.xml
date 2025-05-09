@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="Station ID"
+		android:textAllCaps="true"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<TextView
+		android:id="@+id/lblNote"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="Please input Card Reader Station ID"
+		style="@style/Font15NormalBlack" />
+
+	<LinearLayout
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<EditText
+			android:inputType="textEmailAddress"
+			android:id="@+id/editStationID"
+			android:layout_gravity="center"
+			android:imeOptions="actionDone"
+			style="@style/Font15NormalBlack"
+			android:layout_weight="1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"/>
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/imgBarcode"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:src="@drawable/icon_barcode"
+			android:layout_gravity="center"
+			android:layout_width="@dimen/dip_40"
+			android:layout_height="@dimen/dip_40"/>
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnUpdate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Update"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

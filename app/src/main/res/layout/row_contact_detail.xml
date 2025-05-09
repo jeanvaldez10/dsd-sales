@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+	<TextView
+		android:id="@+id/txtContactType"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_5"
+		android:text="Home Delivery"
+		style="@style/Font15BoldBlack" />
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_weight="3"
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/dip_5" >
+		<TextView
+			android:id="@+id/txtContactName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginTop="@dimen/dip_5"
+			android:text="Home Delivery"
+			style="@style/Font15NormalBlack" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_marginTop="@dimen/dip_5"
+				android:id="@+id/txtContactPhone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0413 154 848"
+				style="@style/Font15NormalBlack" />
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:padding="@dimen/dip_5"
+				android:layout_width="@dimen/dip_30"
+				android:layout_height="@dimen/dip_30"
+				android:src="@drawable/icon_whatsapp"/>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/txtContactEmail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="adove@ozemail.com.au"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+
+</LinearLayout>

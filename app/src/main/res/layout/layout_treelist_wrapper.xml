@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:id="@+id/layoutCollapsed"
+		android:layout_width="@dimen/dip_80"
+		android:layout_height="fill_parent"
+		android:gravity="right|center_vertical">
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<ImageView
+			android:id="@+id/imgCollapsed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/icon_collapsed" />
+	</LinearLayout>
+	<FrameLayout
+		android:id="@+id/treeview_list_item_frame"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+	</FrameLayout>
+</LinearLayout>

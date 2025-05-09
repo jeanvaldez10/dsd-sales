@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_chat_container"
+    style="@style/MatchParent"
+    android:background="@color/white_pressed_color"
+    tools:ignore="RtlHardcoded">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_50"
+        android:id="@+id/action_bar"
+        android:background="@color/top_banner_color">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50"
+            android:padding="@dimen/dip_15"
+            android:id="@+id/btnBack"
+            android:src="@drawable/icon_left_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dip_18"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnBack"
+            android:text="Chat Room"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip_50"
+            android:padding="@dimen/dip_10"
+            android:text="LEAVE"
+            android:layout_toLeftOf="@+id/btnDone"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/btnLeave"
+            android:textSize="@dimen/dip_15"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip_50"
+            android:padding="@dimen/dip_10"
+            android:layout_alignParentRight="true"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/btnDone"
+            android:textSize="@dimen/dip_15"/>
+    </RelativeLayout>
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/list_chat_messages"
+        android:layout_below="@+id/action_bar"
+        style="@style/ListViewWithoutDividerStyle"
+        android:layout_above="@+id/layout_attachment_preview_container"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_chat"
+        style="@style/CenterProgressBarStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_attachment_preview_container"
+        style="@style/MatchWidth"
+        android:layout_height="96dp"
+        android:layout_above="@+id/layout_chat_send_container"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/divider_chat_attachments"
+            style="@style/HorizontalDividerStyle" />
+
+        <dsd.dsdvansales.chat.AttachmentPreviewAdapterView
+            android:id="@+id/adapter_view_attachment_preview"
+            style="@style/MatchWidth" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_chat"
+        style="@style/HorizontalDividerStyle"
+        android:layout_above="@+id/layout_chat_send_container" />
+
+    <LinearLayout
+        android:id="@+id/layout_chat_send_container"
+        style="@style/MatchWidth"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_pressed_color"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/edit_chat_message"
+            style="@style/WeightWidth"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/gray_color"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:layout_gravity="center"
+            android:inputType="textShortMessage"
+            android:maxLength="1024" />
+        <ImageButton
+            android:id="@+id/button_chat_attachment"
+            style="@style/BorderlessImageButtonStyle"
+            android:layout_gravity="center_vertical"
+            android:onClick="onAttachmentsClick"
+            android:src="@drawable/ic_action_attachment" />
+        <ImageButton
+            android:id="@+id/button_chat_send"
+            style="@style/BorderlessImageButtonStyle"
+            android:layout_gravity="center_vertical"
+            android:onClick="onSendChatClick"
+            android:src="@drawable/ic_send"
+            android:text="Send" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_banner_color"
+        android:orientation="horizontal">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:id="@+id/mark_logo"
+            android:src="@drawable/icon_logo"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/imgMenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@drawable/icon_menu"
+            android:layout_gravity="center_vertical"/>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/imgMenu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@drawable/icon_menu2"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <include layout="@layout/main_layout"/>
+</LinearLayout>

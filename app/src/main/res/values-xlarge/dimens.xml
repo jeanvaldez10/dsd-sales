@@ -1,0 +1,70 @@
+<resources>
+
+	<!-- XLarge -->
+
+	<!--
+	<dimen name="dip_1">2dip</dimen>
+	<dimen name="dip_2">4dip</dimen>
+	<dimen name="dip_3">6dip</dimen>
+	<dimen name="dip_5">10dip</dimen>
+	<dimen name="dip_7">14dip</dimen>
+	<dimen name="dip_10">20dip</dimen>
+	<dimen name="dip_12">24dip</dimen>
+	<dimen name="dip_15">30dip</dimen>
+	<dimen name="dip_16">32dip</dimen>
+	<dimen name="dip_18">36dip</dimen>
+	<dimen name="dip_20">40dip</dimen>
+	<dimen name="dip_25">50dip</dimen>
+	<dimen name="dip_30">60dip</dimen>
+	<dimen name="dip_35">70dip</dimen>
+	<dimen name="dip_40">80dip</dimen>
+	<dimen name="dip_45">90dip</dimen>
+	<dimen name="dip_50">100dip</dimen>
+	<dimen name="dip_60">120dip</dimen>
+	<dimen name="dip_70">140dip</dimen>
+	<dimen name="dip_80">160dip</dimen>
+	<dimen name="dip_90">180dip</dimen>
+	<dimen name="dip_100">200dip</dimen>
+	<dimen name="dip_120">240dip</dimen>
+	<dimen name="dip_150">300dip</dimen>
+	<dimen name="dip_200">400dip</dimen>
+	<dimen name="dip_250">500dip</dimen>
+	<dimen name="dip_300">600dip</dimen>
+	<dimen name="dip_350">700dip</dimen>
+	<dimen name="dip_400">800dip</dimen>
+	<dimen name="dip_450">900dip</dimen>
+	<dimen name="dip_500">1000dip</dimen>
+-->
+	<dimen name="dip_1">1dip</dimen>
+	<dimen name="dip_2">3dip</dimen>
+	<dimen name="dip_3">5dip</dimen>
+	<dimen name="dip_5">7dip</dimen>
+	<dimen name="dip_7">10dip</dimen>
+	<dimen name="dip_10">15dip</dimen>
+	<dimen name="dip_12">18dip</dimen>
+	<dimen name="dip_15">22dip</dimen>
+	<dimen name="dip_16">24dip</dimen>
+	<dimen name="dip_18">27dip</dimen>
+	<dimen name="dip_20">30dip</dimen>
+	<dimen name="dip_25">37dip</dimen>
+	<dimen name="dip_30">45dip</dimen>
+	<dimen name="dip_35">52dip</dimen>
+	<dimen name="dip_40">60dip</dimen>
+	<dimen name="dip_45">67dip</dimen>
+	<dimen name="dip_50">75dip</dimen>
+	<dimen name="dip_60">90dip</dimen>
+	<dimen name="dip_70">105dip</dimen>
+	<dimen name="dip_75">113dip</dimen>
+	<dimen name="dip_80">120dip</dimen>
+	<dimen name="dip_90">135dip</dimen>
+	<dimen name="dip_100">150dip</dimen>
+	<dimen name="dip_120">180dip</dimen>
+	<dimen name="dip_150">225dip</dimen>
+	<dimen name="dip_200">300dip</dimen>
+	<dimen name="dip_250">375dip</dimen>
+	<dimen name="dip_300">450dip</dimen>
+	<dimen name="dip_350">525dip</dimen>
+	<dimen name="dip_400">600dip</dimen>
+	<dimen name="dip_450">675dip</dimen>
+	<dimen name="dip_500">750dip</dimen>
+</resources>

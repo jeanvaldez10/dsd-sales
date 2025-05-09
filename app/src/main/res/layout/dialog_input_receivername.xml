@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:layout_marginRight="@dimen/dip_20"
+		android:gravity="center_horizontal"
+		android:text="Receiver Name"
+		style="@style/Font20NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_2"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:layout_marginRight="@dimen/dip_20"
+		android:background="@color/split_color" />
+	<TextView
+		android:id="@+id/txtCaption"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/Font15NormalBlack"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:layout_marginRight="@dimen/dip_20"
+		android:text="Please input receiver name"
+		/>
+	<EditText
+		android:inputType="textEmailAddress"
+		android:id="@+id/editReceiverName"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:layout_marginRight="@dimen/dip_20"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/Font15NormalBlack"
+		/>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_20"
+		android:layout_marginRight="@dimen/dip_20"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnOkay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Okay"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

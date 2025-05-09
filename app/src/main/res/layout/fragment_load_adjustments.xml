@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/dip_10"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="LOAD ADJUSTMENTS"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<TextView
+		android:id="@+id/lblDescription"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="The following customer deliveries are not yet completed. Please select a reason for the incomplete delivery."
+		style="@style/Font15NormalBlack" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:dividerHeight="@dimen/dip_1"
+			android:divider="@color/split_color" />
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			android:gravity="center"
+			android:visibility="gone"
+			style="@style/Font20NormalGray" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+
+		<Button
+			android:id="@+id/btnKey"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_white_small"
+			android:drawableLeft="@drawable/icon_key"
+			android:visibility="invisible"
+			tools:visibility="invisible" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnProceed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Proceed"
+			style="@style/Font20NormalWhite" />
+
+	</LinearLayout>
+</LinearLayout>

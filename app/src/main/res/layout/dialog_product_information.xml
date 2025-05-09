@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_margin="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<ImageView
+
+		android:id="@+id/image"
+		android:layout_margin="@dimen/dip_20"
+		android:layout_gravity="center"
+		android:layout_width="@dimen/dip_150"
+		android:layout_height="@dimen/dip_150">
+
+	</ImageView>
+	<LinearLayout
+		android:padding="@dimen/dip_20"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			style="@style/Font15NormalBlack"
+			android:layout_weight="1"
+			android:id="@+id/txtItemNo"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content">
+
+		</TextView>
+		<TextView
+			style="@style/Font15NormalBlack"
+			android:layout_weight="4"
+			android:id="@+id/txtDescription"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content">
+
+		</TextView>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dip">
+			<ListView
+				android:padding="@dimen/dip_20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/listDetails"
+				android:divider="@null"
+				android:dividerHeight="0dp"
+				>
+
+			</ListView>
+<!--			<TextView-->
+<!--				style="@style/Font15NormalBlack"-->
+<!--				android:id="@+id/txtDetails"-->
+<!--				android:layout_width="match_parent"-->
+<!--				android:layout_height="match_parent">-->
+
+<!--			</TextView>-->
+			<com.wang.avi.AVLoadingIndicatorView
+				android:id="@+id/avi"
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				style="@style/AVLoadingIndicatorView"
+				app:indicatorName="BallSpinFadeLoaderIndicator"
+				app:indicatorColor="@color/orange_back_color"
+				/>
+		</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/layoutOverrideCode"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnRight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

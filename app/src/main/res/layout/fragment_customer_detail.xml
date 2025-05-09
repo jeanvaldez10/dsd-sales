@@ -1,0 +1,361 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:padding="@dimen/dip_10"
+		android:background="@color/button_grey_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txtCustomerName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Customer Name"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="DETAILS"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dip_10">
+				<LinearLayout
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/txtAddress1"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Cnr Maltby Bypass and Princess"
+						style="@style/Font15NormalBlack" />
+					<TextView
+						android:id="@+id/txtAddress2"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="Highway"
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<Button
+					android:id="@+id/btnMap"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/dip_5"
+					android:padding="@dimen/dip_5"
+					android:layout_gravity="center_vertical"
+					android:drawableLeft="@drawable/icon_map"
+					android:background="@drawable/btn_white_medium" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_marginRight="@dimen/dip_10">
+				<TextView
+					android:id="@+id/txtCity"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Werribee"
+					style="@style/Font15NormalBlack" />
+				<Button
+					android:id="@+id/btnThumbnail"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/dip_5"
+					android:padding="@dimen/dip_5"
+					android:layout_gravity="center_vertical"
+					android:drawableLeft="@drawable/icon_no_photo"
+					android:background="@drawable/btn_white_medium" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_marginRight="@dimen/dip_10">
+				<TextView
+					android:id="@+id/txtPhone"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Phone 0412 041 999"
+					style="@style/Font15NormalBlack" />
+				<Button
+					android:id="@+id/btnCall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/dip_5"
+					android:padding="@dimen/dip_5"
+					android:layout_gravity="center_vertical"
+					android:drawableLeft="@drawable/icon_call"
+					android:background="@drawable/btn_white_medium" />
+			</LinearLayout>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dip_1"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_marginRight="@dimen/dip_10"
+				android:background="@color/split_color" />
+			<LinearLayout
+				android:id="@+id/layoutSales"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/dip_10">
+					<TextView
+						android:id="@+id/lblDelivery"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Delivery"
+						style="@style/Font15BoldBlack" />
+					<LinearLayout
+						android:layout_width="0dip"
+						android:layout_weight="5"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/txtStartEnd1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text=""
+							style="@style/Font15NormalBlack" />
+						<TextView
+							android:id="@+id/txtStartEnd2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text=""
+							style="@style/Font15NormalBlack" />
+					</LinearLayout>
+				</LinearLayout>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="@dimen/dip_1"
+					android:layout_marginLeft="@dimen/dip_10"
+					android:layout_marginRight="@dimen/dip_10"
+					android:background="@color/split_color" />
+			</LinearLayout>
+			<LinearLayout
+                android:padding="@dimen/dip_10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:id="@+id/contactList">
+
+			</LinearLayout>
+			<LinearLayout
+                android:padding="@dimen/dip_10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/split_terms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dip_1"
+                    android:background="@color/split_color" />
+				<LinearLayout
+					android:layout_marginTop="@dimen/dip_10"
+					android:id="@+id/layoutCustomer"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/lblCustomerNo"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Customer"
+						style="@style/Font15BoldBlack" />
+					<TextView
+						android:layout_weight="5"
+						android:id="@+id/txtCustomerNo"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content"
+						android:text=""
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+                    android:layout_marginTop="@dimen/dip_10"
+					android:id="@+id/layoutPaymentType"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/lblPaymentType"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Payment Type"
+						style="@style/Font15BoldBlack" />
+					<TextView
+						android:layout_weight="5"
+						android:id="@+id/txtPaymentType"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content"
+						android:text=""
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_marginTop="@dimen/dip_10"
+					android:id="@+id/layoutPriceGroup"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/lblPriceGroup"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Price Group"
+						style="@style/Font15BoldBlack" />
+					<TextView
+						android:layout_weight="5"
+						android:id="@+id/txtPriceGroup"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content"
+						android:text=""
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_marginTop="@dimen/dip_10"
+					android:id="@+id/layoutVisitFrequency"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/lblVisitFrequency"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Visit Frequency"
+						style="@style/Font15BoldBlack" />
+					<TextView
+						android:layout_weight="5"
+						android:id="@+id/txtVisitFrequency"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content"
+						android:text=""
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_marginTop="@dimen/dip_10"
+					android:id="@+id/layoutStoreNumber"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/lblStoreNumber"
+						android:layout_width="0dip"
+						android:layout_weight="2"
+						android:layout_height="wrap_content"
+						android:text="Store Number"
+						style="@style/Font15BoldBlack" />
+					<TextView
+						android:layout_weight="5"
+						android:id="@+id/txtStoreNumber"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content"
+						android:text=""
+						style="@style/Font15NormalBlack" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+<!--
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:dividerHeight="@dimen/dip_1"
+			android:divider="@color/split_color" />
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			android:gravity="center"
+			android:visibility="gone"
+			style="@style/Font20NormalGray" />
+	</LinearLayout>
+-->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<Button
+			android:id="@+id/btnEditCustomer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_20"
+			android:layout_gravity="center_vertical"
+			android:layout_centerVertical="true"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_edit_customer"
+			android:background="@drawable/btn_white_small" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button
+			android:id="@+id/btnGPSPlot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/icon_gps_plot"
+			android:background="@drawable/btn_white_small" />
+		<Button
+			android:id="@+id/btnPhoto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/icon_photo"
+			android:background="@drawable/btn_white_small" />
+	</LinearLayout>
+</LinearLayout>

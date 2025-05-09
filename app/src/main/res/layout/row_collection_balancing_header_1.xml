@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dip_10">
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/lblLabel"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Cash"
+            style="@style/Font15NormalBlack" />
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            style="@style/Font15BoldBlack" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/lblSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="$"
+            style="@style/Font15NormalBlack" />
+        <EditText
+            android:id="@+id/editTotal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            style="@style/Font15NormalBlack" />
+    </LinearLayout>
+</LinearLayout>

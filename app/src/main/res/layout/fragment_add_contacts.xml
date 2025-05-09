@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/button_grey_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10"
+        >
+        <TextView
+            android:id="@+id/lblContactDetail"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Contact Details"
+            style="@style/Font15NormalWhite" />
+        <TextView
+            android:id="@+id/txtTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:text="Trip # 102040507"
+            style="@style/Font15NormalWhite" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="NEW CUSTOMER"
+        style="@style/Font25BoldGray" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_1"
+                android:background="@color/split_color" />
+            <TextView
+                android:id="@+id/lblContactType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:text="Contact Type"
+                style="@style/Font10NormalGray" />
+            <TextView
+                android:layout_marginTop="@dimen/dip_2"
+                android:id="@+id/txtContactType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_drop_down"
+                android:layout_gravity="center_vertical"
+                android:text="Select Contact Type"
+                android:background="@drawable/btn_grey_large"
+                style="@style/Font15NormalBlack" />
+            <TextView
+                android:id="@+id/lblContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:text="Contact Name"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:id="@+id/editContactName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <TextView
+                android:id="@+id/lblContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:text="Contact Phone"
+                style="@style/Font10NormalGray" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/editContactPhone1"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    style="@style/Font15NormalBlack" />
+                <dsd.dsdvansales.views.ClickEffectImageView
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dip_5"
+                    android:layout_width="@dimen/dip_30"
+                    android:layout_height="@dimen/dip_30"
+                    android:src="@drawable/icon_whatsapp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/editContactPhone2"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    style="@style/Font15NormalBlack" />
+                <dsd.dsdvansales.views.ClickEffectImageView
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dip_5"
+                    android:layout_width="@dimen/dip_30"
+                    android:layout_height="@dimen/dip_30"
+                    android:src="@drawable/icon_phone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/editContactPhone3"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    style="@style/Font15NormalBlack" />
+                <dsd.dsdvansales.views.ClickEffectImageView
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dip_5"
+                    android:layout_width="@dimen/dip_30"
+                    android:layout_height="@dimen/dip_30"
+                    android:src="@drawable/icon_phone"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lblContactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:text="Contact Email"
+                style="@style/Font10NormalGray" />
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/editContactEmail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/editContactEmail2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/editContactEmail3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_2"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                style="@style/Font15NormalBlack" />
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_margin="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_left_arrow"
+            android:background="@drawable/btn_button_grey_large" />
+        <View
+            android:layout_height="0dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/btnInfo"
+            android:padding="@dimen/dip_5"
+            android:src="@drawable/icon_info"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+        <View
+            android:layout_height="0dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_10"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_orange_large"
+            android:text="Add"
+            style="@style/Font20NormalWhite" />
+    </LinearLayout>
+</LinearLayout>

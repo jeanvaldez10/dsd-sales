@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="Customer Info"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dip_150"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtDexVersion"
+				android:text="056-1143STAY"
+				style="@style/Font20NormalBlack"
+				android:layout_marginTop="@dimen/dip_10"
+				/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtDescription"
+				android:text=""
+				style="@style/Font15NormalBlack"
+				android:layout_marginTop="@dimen/dip_10"
+				/>
+		</LinearLayout>
+	</ScrollView>
+
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnProceed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Proceed"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:layout_gravity="center"
+		android:id="@+id/txtMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="The following items have not been picked completely"
+		style="@style/Font15NormalBlack" />
+	<RelativeLayout
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<ListView
+			android:divider="@null"
+			android:dividerHeight="0dip"
+			android:id="@+id/list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</RelativeLayout>
+	<TextView
+		android:layout_gravity="center"
+		android:id="@+id/txtConfirmMessage"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="Are you sure you wish to remove them from the order?"
+		style="@style/Font15NormalBlack" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnNo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="No"
+			style="@style/Font20NormalWhite" />
+		<View
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			android:layout_width="0dip">
+
+		</View>
+		<Button
+			android:id="@+id/btnYes"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Yes"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

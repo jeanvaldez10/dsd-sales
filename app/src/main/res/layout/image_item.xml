@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/unknown"
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/btnDelete"
+            android:layout_alignRight="@+id/img"
+            android:padding="@dimen/dip_5"
+            android:src="@drawable/minus"
+            android:layout_width="@dimen/dip_40"
+            android:layout_height="@dimen/dip_40">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+</RelativeLayout>

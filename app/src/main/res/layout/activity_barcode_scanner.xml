@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:baselineAligned="false"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<FrameLayout
+		android:id="@+id/cameraPreview"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dip_10">
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/lblFlashlight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_flashlight"
+			android:drawablePadding="@dimen/dip_5"
+			android:text="Flashlight"
+			android:gravity="center_vertical"
+			style="@style/Font20BoldWhite" />
+		<ToggleButton
+			android:id="@+id/toggleLed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_15"
+			android:background="@drawable/led_toggle"
+			android:button="@null"
+			android:textOff=""
+			android:textOn="" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

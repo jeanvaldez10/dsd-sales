@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/button_grey_color"
+        android:padding="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_normal"
+            android:text="Customer Name"
+            style="@style/Font15NormalWhite" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="EQUIPMENT LIST"
+        android:textAllCaps="true"
+        style="@style/Font25BoldGray" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/btnScanBarCode"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_barcode"
+            />
+
+        <EditText
+            android:id="@+id/editBarCodeScan"
+            style="@style/Font15NormalBlack"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_weight="2"
+            android:imeOptions="actionDone"
+            android:textAllCaps="true" />
+        <Button
+            android:layout_marginLeft="@dimen/dip_10"
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_orange_large"
+            android:text="Search"
+            style="@style/Font15NormalWhite" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dip_10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <ListView
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="@dimen/dip_1"
+                android:divider="@color/split_color"
+                android:id="@+id/equipmentList">
+
+            </ListView>
+            <TextView
+                android:id="@+id/txtNoData"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Data is Found"
+                style="@style/Font20NormalGray"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_left_arrow"
+                android:background="@drawable/btn_button_grey_large" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnAddEquipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_20"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_add_customer"
+                android:background="@drawable/btn_white_small" />
+            <Button
+                android:id="@+id/btnCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_orange_large"
+                android:text="Completed"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

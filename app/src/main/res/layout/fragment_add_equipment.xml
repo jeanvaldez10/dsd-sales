@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="@dimen/dip_10"
+        android:background="@color/button_grey_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            style="@style/Font15NormalWhite" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="ADD EQUIPMENT DETAILS"
+        android:textAllCaps="true"
+        style="@style/Font25BoldGray" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dip_10">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Font10NormalGray"
+                    android:id="@+id/lblSerialNo"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Serial Number / Equipment Number"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <dsd.dsdvansales.views.ClickEffectImageView
+                        android:id="@+id/btnScanBarCode"
+                        android:padding="@dimen/dip_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_barcode"
+                        />
+                    <EditText
+                        android:layout_marginLeft="@dimen/dip_10"
+                        android:id="@+id/editBarCodeScan"
+                        android:layout_width="0dip"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="true"
+                        android:imeOptions="actionDone"
+                        style="@style/Font15NormalBlack" />
+                    <Button
+                        android:layout_marginLeft="@dimen/dip_10"
+                        android:id="@+id/btnSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/btn_orange_large"
+                        android:text="Search"
+                        style="@style/Font15NormalWhite" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Font10NormalGray"
+                    android:id="@+id/lblDescription"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:id="@+id/txtDescription"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="No Description"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font12NormalBlack" />
+                <TextView
+                    style="@style/Font10NormalGray"
+                    android:id="@+id/lblMake"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:id="@+id/txtMake"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="No Make"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font12NormalBlack" />
+                <TextView
+                    style="@style/Font10NormalGray"
+                    android:id="@+id/lblModel"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dip_2"
+                    android:id="@+id/txtModel"
+                    android:layout_marginLeft="@dimen/dip_3"
+                    android:layout_marginRight="@dimen/dip_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="No Model"
+                    android:drawableRight="@drawable/icon_drop_down"
+                    android:background="@drawable/btn_grey_large"
+                    style="@style/Font12NormalBlack" />
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <TextView
+                        style="@style/Font10NormalGray"
+                        android:id="@+id/lblEquipmentType"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_marginTop="@dimen/dip_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Equipment Type"/>
+                    <TextView
+                        android:id="@+id/txtEquipmentType"
+                        android:layout_marginLeft="@dimen/dip_3"
+                        android:layout_marginRight="@dimen/dip_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/icon_drop_down"
+                        android:layout_gravity="center_vertical"
+                        android:text="No Equipment Type"
+                        android:background="@drawable/btn_grey_large"
+                        style="@style/Font12NormalBlack" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_left_arrow"
+                android:background="@drawable/btn_button_grey_large" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <dsd.dsdvansales.views.ClickEffectImageView
+                android:id="@+id/btnNotes"
+                android:src="@drawable/icon_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <dsd.dsdvansales.views.ClickEffectImageView
+                android:id="@+id/btnCamera"
+                android:src="@drawable/icon_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_orange_large"
+                android:text="Completed"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

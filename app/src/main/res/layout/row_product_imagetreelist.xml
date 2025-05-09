@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardView1"
+		android:layout_width="0px"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_margin="@dimen/dip_5"
+		app:cardCornerRadius="8dip"
+		app:cardElevation="2dip">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:background="@drawable/panel_normal"
+			android:elevation="4dip"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/txtStock1"
+				style="@style/Font15NormalGray"
+				android:text="123"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+
+			<ImageView
+				android:id="@+id/imgProduct1"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dip_150"
+				android:layout_gravity="center"
+				android:padding="@dimen/dip_10">
+			</ImageView>
+
+			<TextView
+				android:id="@+id/txtDescription1"
+				android:layout_width="fill_parent"
+				android:layout_height="40dip"
+				android:text="Customer Name"
+				android:textAlignment="center"
+				style="@style/Font15NormalBlack" />
+
+			<Button
+				android:layout_marginTop="@dimen/dip_10"
+				android:id="@+id/btnAdd1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingLeft="@dimen/dip_20"
+				android:paddingRight="@dimen/dip_20"
+				android:paddingTop="@dimen/dip_10"
+				android:paddingBottom="@dimen/dip_10"
+				android:layout_marginBottom="@dimen/dip_10"
+				android:background="@drawable/btn_orange_large"
+				android:text="Add"
+				style="@style/Font15NormalWhite" />
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardView2"
+		android:layout_width="0px"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_5"
+		app:cardCornerRadius="8dip"
+		app:cardElevation="2dip">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:background="@drawable/panel_normal"
+			android:elevation="4dip"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/txtStock2"
+				style="@style/Font15NormalGray"
+				android:text="123"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+
+			<ImageView
+				android:id="@+id/imgProduct2"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dip_150"
+				android:layout_gravity="center"
+				android:padding="@dimen/dip_10">
+			</ImageView>
+
+			<TextView
+				android:id="@+id/txtDescription2"
+				android:layout_width="fill_parent"
+				android:layout_height="40dip"
+				android:text="Customer Name"
+				android:textAlignment="center"
+				style="@style/Font15NormalBlack" />
+
+			<Button
+				android:layout_marginTop="@dimen/dip_10"
+				android:id="@+id/btnAdd2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingLeft="@dimen/dip_20"
+				android:paddingRight="@dimen/dip_20"
+				android:paddingTop="@dimen/dip_10"
+				android:paddingBottom="@dimen/dip_10"
+				android:layout_marginBottom="@dimen/dip_10"
+				android:background="@drawable/btn_orange_large"
+				android:text="Add"
+				style="@style/Font15NormalWhite" />
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+</LinearLayout>
+
+

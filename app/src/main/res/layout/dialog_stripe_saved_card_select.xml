@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:paddingTop="@dimen/dip_10"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_gravity="center_horizontal"
+		android:text="Title"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<TextView
+		android:id="@+id/txtFailed"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_gravity="center_horizontal"
+		android:text="FAILED"
+		style="@style/Font20BoldRed" />
+	<TextView
+		android:id="@+id/txtCustomerName"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_20"
+		android:text="customer name"
+		style="@style/Font20NormalOrange" />
+	<TextView
+		android:id="@+id/txtMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:layout_gravity="center"
+		android:text="Message"
+		style="@style/Font20NormalBlack" />
+	<ListView
+		android:id="@+id/listSavedCard"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dip_150" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:layout_marginBottom="@dimen/dip_20"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnLeft"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="No"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnMiddle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Ok"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnRight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Yes"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

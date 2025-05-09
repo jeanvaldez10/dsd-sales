@@ -1,0 +1,620 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:padding="@dimen/dip_10"
+		android:background="@color/button_grey_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txtCustomerName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Customer Name"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="LOAD TRUCK"
+		style="@style/Font25BoldGray" />
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_marginRight="@dimen/dip_10"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dip_1"
+				android:background="@color/split_color" />
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5">
+				<TextView
+					android:id="@+id/lblTotalQty"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/dip_10"
+					android:text="Total Quantity"
+					style="@style/Font15NormalBlack" />
+
+				<TextView
+					android:id="@+id/txtUnits"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="0 UN"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+				<TextView
+					android:id="@+id/txtContainers"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="0 CT"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+				<TextView
+					android:id="@+id/txtCartons"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="0 CS"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="@dimen/dip_10"
+				android:orientation="vertical"
+				android:id="@+id/layoutDetailSummary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<View
+						android:layout_weight="2.5"
+						android:layout_width="0dip"
+						android:layout_height="0dip">
+
+					</View>
+					<TextView
+						style="@style/Font10NormalBlack"
+						android:text="CASE"
+						android:id="@+id/lblCase"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content">
+
+					</TextView>
+					<TextView
+						style="@style/Font10NormalBlack"
+						android:text="Unit Price"
+						android:id="@+id/lblUnitPrice"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content">
+
+					</TextView>
+					<TextView
+						style="@style/Font10NormalBlack"
+						android:text="Disc Amt."
+						android:id="@+id/lblDiscAmount"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content">
+
+					</TextView>
+					<TextView
+						style="@style/Font10NormalBlack"
+						android:text="Net Amt."
+						android:id="@+id/lblNetAmount"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						android:layout_height="wrap_content">
+
+					</TextView>
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="vertical"
+					android:id="@+id/layoutDetailInfo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_marginTop="@dimen/dip_15"
+					android:orientation="vertical"
+					android:id="@+id/layoutDetailResult"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:orientation="horizontal"
+						android:id="@+id/layoutSubTotal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<View
+							android:layout_weight="0.5"
+							android:layout_width="0dip"
+							android:layout_height="0dip">
+						</View>
+						<TextView
+							style="@style/Font10NormalBlack"
+							android:layout_weight="3"
+							android:text="Sub Total"
+							android:id="@+id/lblSubTotal"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+						<TextView
+							style="@style/Font10NormalBlack"
+							android:layout_weight="3"
+							android:text=""
+							android:id="@+id/txtSubTotal"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:id="@+id/layoutGST"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<View
+							android:layout_weight="0.5"
+							android:layout_width="0dip"
+							android:layout_height="0dip">
+						</View>
+						<TextView
+							style="@style/Font10NormalBlack"
+							android:layout_weight="3"
+							android:text="GST"
+							android:id="@+id/lblGST"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+						<TextView
+							style="@style/Font10NormalBlack"
+							android:layout_weight="3"
+							android:text=""
+							android:id="@+id/txtGST"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:id="@+id/layoutInvoiceTotal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<View
+							android:layout_weight="0.5"
+							android:layout_width="0dip"
+							android:layout_height="0dip">
+						</View>
+						<TextView
+							style="@style/Font10BoldBlack"
+							android:layout_weight="3"
+							android:text="Invoice Total inc GST"
+							android:id="@+id/lblInvoiceTotal"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+						<TextView
+							style="@style/Font10BoldBlack"
+							android:textSize="10sp"
+							android:layout_weight="3"
+							android:text=""
+							android:id="@+id/txtInvoiceTotal"
+							android:layout_width="0dip"
+							android:layout_height="wrap_content">
+						</TextView>
+					</LinearLayout>
+
+				</LinearLayout>
+			</LinearLayout>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dip_1"
+				android:layout_marginTop="@dimen/dip_5"
+				android:background="@color/split_color" />
+			<LinearLayout
+			    android:id="@+id/layoutTotalValue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/dip_5"
+				android:paddingBottom="@dimen/dip_5"
+				android:background="@drawable/table_normal">
+				<TextView
+					android:id="@+id/lblTotalValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Total Value"
+					style="@style/Font15BoldBlack" />
+				<TextView
+					android:id="@+id/txtOutstandingValue"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="$0"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+				<TextView
+					android:id="@+id/txtTotalValue"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="$0"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+				<TextView
+					android:id="@+id/txtTotalAllValue"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="$0"
+					android:gravity="right"
+					style="@style/Font15BoldBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/layoutTotalCollection"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/table_normal">
+				<TextView
+					android:id="@+id/lblTotalCollection"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Total Collection"
+					android:layout_gravity="center_vertical"
+					style="@style/Font15BoldBlack" />
+				<dsd.dsdvansales.views.ClickEffectImageView
+					android:id="@+id/btnDetail"
+					android:layout_width="@dimen/dip_30"
+					android:layout_height="@dimen/dip_30"
+					android:layout_gravity="center_vertical"
+					android:src="@drawable/icon_detail_collection"
+					android:background="@color/white_color"
+					android:layout_margin="@dimen/dip_5"
+					/>
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="$"
+						android:id="@+id/lblCurrencySymbol"
+						android:gravity="right|center_vertical"
+						style="@style/Font15BoldBlack"
+						android:layout_centerVertical="true"
+						android:layout_toLeftOf="@+id/editTotalCollection"/>
+					<EditText
+						android:id="@+id/editTotalCollection"
+						android:layout_width="@dimen/dip_80"
+						android:layout_height="wrap_content"
+						android:hint=""
+						android:singleLine="true"
+						android:inputType="numberDecimal"
+						android:imeOptions="actionNext"
+						style="@style/Font15NormalBlack"
+						android:layout_alignParentRight="true"
+						/>
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/lblFullPaymentBy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Payment by"
+					style="@style/Font15NormalBlack" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/dip_5"
+					android:layout_marginRight="@dimen/dip_5"
+					android:text="COD"
+					android:id="@+id/lblTerms"
+					style="@style/Font15NormalBlack"/>
+				<ImageView
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content" />
+				<CheckBox
+					android:id="@+id/chkCard"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Card"
+					style="@style/Font15NormalBlack" />
+				<CheckBox
+					android:id="@+id/chkCash"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Cash"
+					style="@style/Font15NormalBlack" />
+				<CheckBox
+					android:id="@+id/chkCheque"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Cheque"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dip_1"
+				android:background="@color/split_color" />
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				>
+				<TextView
+					android:id="@+id/lblStoreNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="Store Number"
+					style="@style/Font15NormalBlack" />
+				<TextView
+					android:gravity="center"
+					android:padding="@dimen/dip_7"
+					android:id="@+id/txtStoreNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:hint=""
+					android:singleLine="true"
+					android:inputType="text"
+					android:imeOptions="actionNext"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				>
+				<TextView
+					android:id="@+id/lblReceiptNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="Receipt Number"
+					style="@style/Font15NormalBlack" />
+				<EditText
+					android:maxLength="12"
+					android:id="@+id/editReceiptNumber"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:hint="Receipt Number"
+					android:singleLine="true"
+					android:inputType="text"
+					android:imeOptions="actionNext"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5">
+				<TextView
+					android:id="@+id/lblReceiverName"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="Receiver Name"
+					style="@style/Font15NormalBlack" />
+				<EditText
+					android:id="@+id/editReceiverName"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:hint="Receiver Name"
+					android:singleLine="true"
+					android:inputType="text"
+					android:imeOptions="actionDone"
+					style="@style/Font15NormalBlack" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/btnSignature"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5"
+				android:padding="@dimen/dip_5"
+				android:background="@drawable/btn_white_large"
+				android:text="Signature"
+				style="@style/Font20NormalBlack" />
+			<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/layoutDeliverTemp"
+			android:layout_marginTop="@dimen/dip_10"
+			android:orientation="horizontal">
+				<TextView
+					android:id="@+id/lblDeliveryTemperature"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="Delivery Temperature"
+					android:layout_weight="1"
+					style="@style/Font15NormalBlack"/>
+				<TextView
+					android:id="@+id/lblTempUnit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text=""
+					style="@style/Font15NormalBlack"/>
+				<LinearLayout
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:layout_gravity="center"
+						android:id="@+id/plus"
+						android:gravity="center"
+						android:layout_width="@dimen/dip_20"
+						android:layout_height="@dimen/dip_25"
+						android:text="+"
+						style="@style/Font20NormalBlack"/>
+					<TextView
+						android:layout_gravity="center"
+						android:id="@+id/minus"
+						android:gravity="center"
+						android:layout_width="@dimen/dip_20"
+						android:layout_height="@dimen/dip_25"
+						android:text="-"
+						style="@style/Font20NormalBlack"/>
+				</LinearLayout>
+				<EditText
+					android:layout_width="@dimen/dip_80"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					style="@style/Font15NormalBlack"
+					android:inputType="phone"
+					android:id="@+id/editDeliverTemp"/>
+			</LinearLayout>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dip_1"
+				android:layout_marginTop="@dimen/dip_5"
+				android:background="@color/split_color" />
+			<!--
+			<LinearLayout
+				android:id="@+id/layoutDeliveryDate"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dip_5">
+				<TextView
+					android:id="@+id/lblDesiredDelDate"
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="Desired Del. Date"
+					style="@style/Font15NormalBlack" />
+				<LinearLayout
+					android:layout_width="0dip"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical">
+					<Button
+						android:id="@+id/btnPickDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:padding="0dip"
+						android:drawableLeft="@drawable/icon_pickdate"
+						android:background="@drawable/btn_white_small" />
+					<TextView
+						android:id="@+id/txtDate"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/dip_5"
+						android:layout_gravity="center_vertical"
+						android:padding="@dimen/dip_5"
+						android:background="@drawable/btn_white_large"
+						android:text="Sun 14/09/2014"
+						style="@style/Font10NormalBlack" />
+				</LinearLayout>
+			</LinearLayout>
+			-->
+		</LinearLayout>
+	</ScrollView>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/btnBack"
+			android:layout_toLeftOf="@+id/btnConfirm">
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnContainerTracking"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1"
+				android:src="@drawable/icon_containers"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_margin="@dimen/dip_5"
+				android:background="@color/white_color"
+				/>
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnNote"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/icon_note"
+				android:layout_margin="@dimen/dip_5"
+				android:background="@color/white_color"
+				/>
+
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnPhoto"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/icon_photo"
+				android:background="@color/white_color"
+				android:layout_margin="@dimen/dip_5"
+				android:layout_marginRight="@dimen/dip_10"
+				/>
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btnConfirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_orange_large"
+			android:text="Confirm"
+			style="@style/Font20NormalWhite"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"/>
+	</RelativeLayout>
+</LinearLayout>

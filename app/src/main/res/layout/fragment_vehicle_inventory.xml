@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:background="@color/button_grey_color"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dip_10"
+		>
+		<TextView
+			android:layout_alignParentLeft="true"
+			android:id="@+id/txtTotalWeight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="2,567 KG"
+			style="@style/Font20BoldWhite" />
+		<TextView
+			android:layout_alignParentRight="true"
+			android:id="@+id/txtTrip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:text="Trip # 102040507"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="VEHICLE INVENTORY"
+		style="@style/Font25BoldGray" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtFresh"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dip_5"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:text="Fresh"
+			android:gravity="center"
+			android:background="@color/vehicle_inventory_selected_color"
+			style="@style/Font15NormalWhite" />
+		<TextView
+			android:id="@+id/txtReturns"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:layout_marginRight="@dimen/dip_5"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:text="Returns"
+			android:gravity="center"
+			android:background="@color/vehicle_inventory_normal_color"
+			style="@style/Font15NormalWhite" />
+		<TextView
+			android:id="@+id/txtContainers"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:text="Containers"
+			android:gravity="center"
+			android:background="@color/vehicle_inventory_normal_color"
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:orientation="vertical">
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			android:dividerHeight="0dp"
+			android:divider="@color/transparent_color" />
+		<TextView
+			android:id="@+id/txtNoData"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/msg_no_data"
+			android:gravity="center"
+			android:visibility="gone"
+			style="@style/Font20NormalGray" />
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_marginRight="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/btnTake"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_load_take"
+			android:layout_marginRight="@dimen/dip_10"
+			android:background="@drawable/btn_white_small" />
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/btnRequest"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/request"
+			android:layout_marginRight="@dimen/dip_10"
+			android:background="@drawable/btn_white_small" />
+		<dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/btnNote"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_note"
+			android:background="@drawable/btn_white_small"
+			android:layout_marginRight="@dimen/dip_10"/>
+		<Button
+			android:id="@+id/btnAdjust"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_orange_large"
+			android:text="Adjust"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/dip_5"
+    android:paddingBottom="@dimen/dip_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Invoice Number"
+        android:id="@+id/txtInvoiceNo"
+        style="@style/Font15NormalBlack">
+
+    </TextView>
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Date"
+        android:id="@+id/txtInvoiceDate"
+        style="@style/Font15NormalBlack">
+
+    </TextView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:layout_gravity="center"
+            android:id="@+id/btnView"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dip_2"
+            android:src="@drawable/icon_pdf_preview"
+            android:layout_width="@dimen/dip_20"
+            android:layout_height="@dimen/dip_20">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:id="@+id/btnPrint"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dip_2"
+            android:src="@drawable/icon_pdf_created"
+            android:layout_width="@dimen/dip_20"
+            android:layout_height="@dimen/dip_20">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+        <dsd.dsdvansales.views.ClickEffectImageView
+            android:layout_gravity="center"
+            android:id="@+id/btnEmail"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dip_2"
+            android:src="@drawable/icon_message"
+            android:layout_width="@dimen/dip_20"
+            android:layout_height="@dimen/dip_20">
+
+        </dsd.dsdvansales.views.ClickEffectImageView>
+    </LinearLayout>
+</LinearLayout>

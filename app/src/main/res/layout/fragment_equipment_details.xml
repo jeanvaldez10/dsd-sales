@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/button_grey_color"
+        android:padding="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_normal"
+            android:text="Customer Name"
+            style="@style/Font15NormalWhite" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="EQUIPMENT DETAILS "
+        android:textAllCaps="true"
+        style="@style/Font25BoldGray" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dip_10">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    style="@style/Font15NormalGray" />
+                <EditText
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editDescription"
+                    style="@style/Font15NormalBlack"
+                    />
+                <TextView
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:id="@+id/lblMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    style="@style/Font15NormalGray" />
+                <EditText
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editMake"
+                    style="@style/Font15NormalBlack"
+                    />
+                <TextView
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:id="@+id/lblModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    style="@style/Font15NormalGray" />
+                <EditText
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editModel"
+                    style="@style/Font15NormalBlack"
+                    />
+                <TextView
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:id="@+id/lblEquipmentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Type"
+                    style="@style/Font15NormalGray" />
+                <EditText
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editEquipmentType"
+                    style="@style/Font15NormalBlack"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_marginTop="@dimen/dip_10"
+                            android:id="@+id/lblLastRepaired"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Repaired"
+                            style="@style/Font15NormalGray" />
+                        <EditText
+                            android:layout_marginRight="@dimen/dip_10"
+                            android:editable="false"
+                            android:layout_marginTop="@dimen/dip_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editLastRepaired"
+                            style="@style/Font15NormalBlack"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_marginTop="@dimen/dip_10"
+                            android:id="@+id/lblLastVerified"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Repaired"
+                            style="@style/Font15NormalGray" />
+                        <EditText
+                            android:editable="false"
+                            android:layout_marginTop="@dimen/dip_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editLastVerified"
+                            style="@style/Font15NormalBlack"
+                            android:layout_marginRight="@dimen/dip_10"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginTop="@dimen/dip_10"
+                        android:id="@+id/lblVerifyEquipment"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Verify Equipment"
+                        style="@style/Font15NormalGray" />
+                    <TextView
+                        android:id="@+id/txtVerify"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip_10"
+                        android:drawableRight="@drawable/icon_drop_down"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:background="@drawable/btn_grey_large"
+                        style="@style/Font15NormalBlack" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_left_arrow"
+                android:background="@drawable/btn_button_grey_large" />
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <dsd.dsdvansales.views.ClickEffectImageView
+                android:id="@+id/btnCamera"
+                android:src="@drawable/icon_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_orange_large"
+                android:text="Completed"
+                style="@style/Font20NormalWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

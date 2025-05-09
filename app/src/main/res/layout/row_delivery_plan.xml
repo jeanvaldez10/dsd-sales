@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/dip_5"
+	android:background="@drawable/table_normal">
+	<TextView
+		android:id="@+id/txtStartTime1"
+		android:layout_width="@dimen/dip_70"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:text="0000000"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:id="@+id/txtCustomerName"
+		android:layout_width="0dip"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:text="Name"
+		style="@style/Font15NormalBlack" />
+	<ImageView
+		android:id="@+id/imgMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_gravity="center_vertical"
+		android:background="@drawable/icon_message" />
+</LinearLayout>

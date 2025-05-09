@@ -1,0 +1,93 @@
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="8dip"
+	app:cardElevation="2dip">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dip_10"
+		android:background="@drawable/panel_normal"
+		android:elevation="4dip"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/txtStock"
+			style="@style/Font15NormalGray"
+			android:text="123"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+
+		<ImageView
+			android:id="@+id/imgProduct"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dip_150"
+			android:layout_gravity="center"
+			android:padding="@dimen/dip_10">
+		</ImageView>
+
+		<TextView
+			android:id="@+id/txtDescription"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:text="Customer Name"
+			android:textAlignment="center"
+			style="@style/Font15NormalBlack" />
+
+		<TextView
+			android:id="@+id/txtItemType"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Item Type"
+			style="@style/Font10NormalBlack"
+			android:visibility="gone"/>
+		<TextView
+			android:id="@+id/txtProductGroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Product Group"
+			style="@style/Font10NormalBlack"
+			android:visibility="gone"/>
+		<TextView
+			android:id="@+id/txtProductLine"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Product Line"
+			style="@style/Font10NormalBlack"
+			android:visibility="gone"/>
+		<TextView
+			android:id="@+id/txtBrand"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Brand"
+			style="@style/Font10NormalBlack"
+			android:visibility="gone"/>
+		<TextView
+			android:id="@+id/txtSubBrand"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Sub Brand"
+			style="@style/Font10NormalBlack"
+			android:visibility="gone"/>
+
+		<Button
+			android:layout_marginTop="@dimen/dip_10"
+			android:id="@+id/btnAdd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:paddingLeft="@dimen/dip_20"
+			android:paddingRight="@dimen/dip_20"
+			android:paddingTop="@dimen/dip_10"
+			android:paddingBottom="@dimen/dip_10"
+			android:layout_marginBottom="@dimen/dip_10"
+			android:background="@drawable/btn_orange_large"
+			android:text="Add"
+			style="@style/Font15NormalWhite" />
+	</LinearLayout>
+</androidx.cardview.widget.CardView>
+

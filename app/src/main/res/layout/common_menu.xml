@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/layoutMenu1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/menu_bg_color"
+		android:visibility="gone"
+		android:orientation="vertical">
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_2"
+			android:background="@color/menu_split_color"/>
+			
+		<TextView
+			android:id="@+id/txtHelp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color1"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_help"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Help"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtAbout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color2"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_about"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="About"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtTerms"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color1"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_terms"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:visibility="gone"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Terms of Use"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtCommunication"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color1"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_ftp"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Communication"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutMenu2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/menu_bg_color"
+		android:visibility="gone"
+		android:orientation="vertical">
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dip_2"
+			android:background="@color/menu_split_color"
+/>
+		<TextView
+			android:id="@+id/txtEndJourney"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color1"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_exit"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="End Journey"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtLogout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color2"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_logout"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Logout"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtMultiLang"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color1"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_english"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Language"
+			style="@style/Font20NormalWhite" />
+		<TextView
+			android:id="@+id/txtSalesTarget"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/menu_item_bg_color2"
+			android:padding="@dimen/dip_10"
+			android:drawableLeft="@drawable/icon_sales_target"
+			android:drawablePadding="@dimen/dip_10"
+			android:gravity="center_vertical"
+			android:textColor="@drawable/clickable_textview_white"
+			android:text="Sales Target"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dip_10"
+    android:orientation="horizontal"
+    android:background="@color/white_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtItemNo"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:layout_gravity="center"
+        android:text="123123123123"
+        style="@style/Font12NormalBlack" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="0dip"/>
+    <TextView
+        android:id="@+id/txtItemDescription"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:layout_gravity="center"
+        android:text="ItemDescription"
+        style="@style/Font12NormalBlack" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="0dip"/>
+    <EditText
+        android:padding="@dimen/dip_5"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:layout_weight="20"
+        android:id="@+id/editInput"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        style="@style/Font12NormalBlack" />
+</LinearLayout>

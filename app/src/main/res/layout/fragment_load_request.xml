@@ -1,0 +1,344 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:background="@color/button_grey_color"
+		android:padding="@dimen/dip_10"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_alignParentRight="true"
+			android:id="@+id/txtTrip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:text="Trip # 102040507"
+			style="@style/Font15NormalWhite" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/lblTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:gravity="center_horizontal"
+		android:text="LOAD REQUEST"
+		style="@style/Font25BoldGray" />
+
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10">
+		<EditText
+			android:id="@+id/editItemNo"
+			android:layout_width="0dip"
+			android:layout_weight="3"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:imeOptions="actionNext"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" Qty"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black_color"
+			/>
+		<EditText
+			android:id="@+id/editCase"
+			android:layout_width="0dip"
+			android:layout_weight="1.5"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:singleLine="true"
+			android:inputType="number"
+			android:imeOptions="actionNext"
+			android:maxLength="4"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtCaseSplit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="/"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black_color"
+			/>
+		<EditText
+			android:id="@+id/editQty"
+			android:layout_width="0dip"
+			android:layout_weight="1.5"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_5"
+			android:singleLine="true"
+			android:inputType="number"
+			android:imeOptions="actionDone"
+			android:maxLength="8"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/txtDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Invalid Product"
+			style="@style/Font15NormalBlack" />
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnFilter"
+				android:layout_gravity="center"
+				android:layout_width="@dimen/dip_30"
+				android:layout_height="@dimen/dip_30"
+				android:src="@drawable/icon_filter"/>
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnSort"
+				android:layout_gravity="center"
+				android:layout_width="@dimen/dip_30"
+				android:layout_height="@dimen/dip_30"
+				android:src="@drawable/icon_sort"/>
+			<LinearLayout
+				android:layout_marginLeft="@dimen/dip_5"
+				android:layout_marginBottom="@dimen/dip_5"
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_gravity="center|bottom"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:id="@+id/lblCartons"
+					android:text="Count"
+					android:gravity="right"
+					android:layout_weight="1"
+					style="@style/Font15NormalBlack"/>
+				<TextView
+					android:text="0"
+					android:layout_marginLeft="@dimen/dip_5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:id="@+id/txtCartons"
+					style="@style/Font15BoldBlack"/>
+			</LinearLayout>
+			<Button
+				android:minWidth="@dimen/dip_80"
+				android:id="@+id/btnAdd"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:padding="@dimen/dip_10"
+				android:background="@drawable/btn_orange_large"
+				android:text="Add"
+				style="@style/Font15NormalWhite"
+				/>
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="@dimen/dip_2"
+		android:paddingBottom="@dimen/dip_2"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@drawable/table_normal">
+		<TextView
+			android:layout_width="0dip"
+			android:layout_weight="12"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_2"
+			style="@style/Font12NormalBlack"/>
+		<TextView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_2"
+			style="@style/Font12NormalBlack"/>
+		<TextView
+			android:id="@+id/lblSales"
+			android:layout_width="@dimen/dip_70"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_2"
+			android:text="Par Level"
+			android:gravity="right"
+			style="@style/Font12NormalBlack"/>
+		<TextView
+			android:id="@+id/lblOnTruck"
+			android:layout_width="@dimen/dip_70"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_2"
+			android:text="On Truck"
+			android:gravity="right"
+			style="@style/Font12NormalBlack"/>
+		<TextView
+			android:id="@+id/lblSuggest"
+			android:layout_width="@dimen/dip_60"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dip_2"
+			android:gravity="right"
+			android:text="Suggest"
+			style="@style/Font12NormalBlack"/>
+	</LinearLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<dsd.dsdvansales.views.FullDrawerLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/dip_5"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<ListView
+				android:id="@+id/listView"
+				android:layout_width="fill_parent"
+				android:layout_height="0dip"
+				android:layout_weight="1"
+				android:dividerHeight="0dp"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_marginRight="@dimen/dip_10"
+				android:divider="@color/transparent_color" />
+			<TextView
+				android:id="@+id/txtMore"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="....."
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20BoldBlue" />
+			<TextView
+				android:id="@+id/txtNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>
+		<!--
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_gravity="right"
+			android:background="@color/white_color"
+			>
+			<ListView
+				android:id="@+id/slidelistView"
+				android:layout_width="fill_parent"
+				android:layout_height="0dip"
+				android:layout_weight="1"
+				android:dividerHeight="0dp"
+				android:divider="@color/transparent_color"
+				android:layout_marginLeft="@dimen/dip_10"
+				android:layout_marginRight="@dimen/dip_10"/>
+			<TextView
+				android:id="@+id/txtSlideMore"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="....."
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20BoldBlue" />
+			<TextView
+				android:id="@+id/txtSlideNoData"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/msg_no_data"
+				android:gravity="center"
+				android:visibility="gone"
+				style="@style/Font20NormalGray" />
+		</LinearLayout>-->
+
+	</dsd.dsdvansales.views.FullDrawerLayout>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:background="@color/split_color" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_10"
+			android:layout_gravity="center_vertical"
+			android:drawableLeft="@drawable/icon_left_arrow"
+			android:background="@drawable/btn_button_grey_large" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:id="@+id/btnProductTreeList"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_tree"
+			android:background="@drawable/btn_white_medium" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:id="@+id/btnBarcodeScanner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_barcode"
+			android:background="@drawable/btn_white_medium" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:id="@+id/btnProductSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dip_5"
+			android:drawableLeft="@drawable/icon_search2"
+			android:background="@drawable/btn_white_medium" />
+		<ImageView
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="fill_parent" />
+		<Button
+			android:layout_gravity="center"
+			android:id="@+id/btnDone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_orange_large"
+			android:text="Done"
+			style="@style/Font20NormalWhite" />
+	</LinearLayout>
+</LinearLayout>

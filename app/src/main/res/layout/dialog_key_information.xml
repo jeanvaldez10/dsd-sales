@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="KEY INFORMATION"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/txtDescription"
+		android:text="The following access details are for the deliveries today."
+		style="@style/Font15NormalBlack"
+		android:layout_marginTop="@dimen/dip_10"
+		/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dip_1"
+		android:layout_marginTop="@dimen/dip_10"
+		android:background="@color/gray_color">
+
+	</LinearLayout>
+	<ListView
+		android:layout_width="match_parent"
+		android:id="@+id/keyList"
+		android:divider="@color/transparent_color"
+		android:dividerHeight="0dip"
+		android:layout_height="@dimen/dip_150"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_marginBottom="@dimen/dip_10"></ListView>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:paddingTop="@dimen/dip_10"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:textAllCaps="true"
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:layout_gravity="center_horizontal"
+		android:text="Post Visit Details"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<LinearLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_marginTop="@dimen/dip_10"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_marginRight="@dimen/dip_10"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:layout_gravity="center"
+				android:layout_width="0dip"
+				android:layout_weight="1.8"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_gravity="center"
+					android:id="@+id/lblNextVisitDate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Next Visit Date"
+					style="@style/Font15NormalBlack" />
+				<TextView
+					android:layout_marginLeft="@dimen/dip_5"
+					android:id="@+id/txtNextVisitDateMandantory"
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="*"
+					style="@style/Font15NormalRed" />
+			</LinearLayout>
+
+			<EditText
+				android:inputType="datetime"
+				android:id="@+id/editNextVisitDate"
+				android:textColor="@color/black_color"
+				android:layout_weight="2"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				style="@style/Font15NormalBlack"/>
+			<dsd.dsdvansales.views.ClickEffectImageView
+				android:id="@+id/btnPickDate"
+				android:padding="@dimen/dip_5"
+				android:src="@drawable/icon_pickdate"
+				android:layout_gravity="center"
+				android:layout_width="@dimen/dip_40"
+				android:layout_height="@dimen/dip_40"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_marginRight="@dimen/dip_10"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:layout_gravity="center"
+				android:layout_width="0dip"
+				android:layout_weight="1.8"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_gravity="center"
+					android:id="@+id/lblVisitFrequency"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Visit Frequency"
+					style="@style/Font15NormalBlack" />
+				<TextView
+					android:layout_marginLeft="@dimen/dip_5"
+					android:id="@+id/txtVisitFrequencyMandantory"
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="*"
+					style="@style/Font15NormalRed" />
+			</LinearLayout>
+			<EditText
+				android:inputType="number"
+				android:id="@+id/editVisitFrequency"
+				android:textColor="@color/black_color"
+				android:layout_weight="1"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				style="@style/Font15NormalBlack"/>
+			<TextView
+				android:id="@+id/lblWeeks"
+				android:paddingLeft="@dimen/dip_10"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="weeks"
+				style="@style/Font15NormalBlack"/>
+			<View
+				android:layout_gravity="center"
+				android:layout_width="@dimen/dip_40"
+				android:layout_height="@dimen/dip_40"/>
+		</LinearLayout>
+		<EditText
+			android:layout_marginLeft="@dimen/dip_10"
+			android:layout_marginRight="@dimen/dip_10"
+			android:gravity="left|top"
+			android:hint="Visit Notes"
+			android:layout_marginTop="10dp"
+			android:id="@+id/editNotes"
+			android:textColor="@color/black_color"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="@dimen/dip_100"
+			style="@style/Font15NormalBlack"/>
+
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:layout_marginBottom="@dimen/dip_20"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:layout_marginRight="@dimen/dip_10"
+		android:orientation="horizontal">
+		<Button
+
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite" />
+		<Button
+
+			android:id="@+id/btnDone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Done"
+			style="@style/Font20NormalWhite" />
+	</RelativeLayout>
+</LinearLayout>

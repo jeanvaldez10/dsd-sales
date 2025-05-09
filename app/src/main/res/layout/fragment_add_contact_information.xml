@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/button_grey_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10"
+        >
+        <TextView
+            android:id="@+id/lblContactDetail"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            style="@style/Font15NormalWhite" />
+        <TextView
+            android:id="@+id/txtTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:text="Trip # 102040507"
+            style="@style/Font15NormalWhite" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center_horizontal"
+        android:text="NEW CUSTOMER"
+        style="@style/Font25BoldGray" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dip_1"
+                android:background="@color/split_color" />
+           <LinearLayout
+               android:layout_marginBottom="@dimen/dip_10"
+               android:id="@+id/layoutContactInfoList"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_margin="@dimen/dip_10"
+        android:background="@color/split_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_left_arrow"
+            android:background="@drawable/btn_button_grey_large" />
+        <View
+            android:layout_height="0dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_10"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_orange_large"
+            android:text="Add"
+            style="@style/Font20NormalWhite" />
+    </LinearLayout>
+</LinearLayout>

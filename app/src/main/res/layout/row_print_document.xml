@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dip_10"
+	android:paddingBottom="@dimen/dip_10"
+	android:background="@drawable/table_normal"
+	android:orientation="vertical">
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dip_10">
+	    <TextView
+		android:id="@+id/txtCustomerName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:text="Customer Name"
+		style="@style/Font12NormalBlack" />
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_3"
+		android:layout_marginLeft="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtType"
+			android:layout_width="0dip"
+			android:layout_weight="2.5"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="Invoice"
+			style="@style/Font12NormalBlack" />
+		<TextView
+			android:id="@+id/txtDocNo"
+			android:layout_width="0dip"
+			android:layout_weight="3"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="000000000"
+			style="@style/Font12NormalBlack" />
+		<TextView
+			android:id="@+id/txtInvoiceTotal"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="$0.00"
+			android:gravity="right"
+			style="@style/Font12NormalBlack" />
+		<TextView
+			android:id="@+id/txtCentsRounding"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="$0.00"
+			android:gravity="right"
+			style="@style/Font12NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutVoid"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_3"
+		android:layout_marginLeft="@dimen/dip_10">
+		<TextView
+			android:id="@+id/txtVoidType"
+			android:layout_width="0dip"
+			android:layout_weight="2.5"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="Void"
+			style="@style/Font12NormalRed" />
+		<TextView
+			android:id="@+id/txtVoidDocNo"
+			android:layout_width="0dip"
+			android:layout_weight="3"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="000000000"
+			style="@style/Font12NormalRed" />
+		<TextView
+			android:id="@+id/txtVoidInvoiceTotal"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="$0.00"
+			android:gravity="right"
+			style="@style/Font12NormalRed" />
+		<TextView
+			android:id="@+id/txtVoidCentsRounding"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="$0.00"
+			android:gravity="right"
+			style="@style/Font12NormalRed" />
+	</LinearLayout>
+</LinearLayout>

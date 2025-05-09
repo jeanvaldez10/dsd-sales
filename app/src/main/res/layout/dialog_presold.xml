@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/dip_20"
+	android:padding="@dimen/dip_20"
+	android:layout_gravity="center"
+	android:background="@color/white_color"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/txtTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="DELIVERY NOTES"
+		android:gravity="center_horizontal"
+		style="@style/Font25BoldBlack" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10">
+		<TextView
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:text="Order #:"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtOrderNo"
+			android:layout_width="0dip"
+			android:layout_weight="5"
+			android:layout_height="wrap_content"
+			android:text="00000000"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10">
+		<TextView
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:text="PORef #:"
+			style="@style/Font15NormalBlack" />
+		<TextView
+			android:id="@+id/txtPORef"
+			android:layout_width="0dip"
+			android:layout_weight="5"
+			android:layout_height="wrap_content"
+			android:text="00000000"
+			style="@style/Font15NormalBlack" />
+	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_10"
+		android:text="Delivery Instructions :"
+		style="@style/Font15NormalBlack" />
+	<TextView
+		android:id="@+id/txtInstr"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_5"
+		android:layout_marginLeft="@dimen/dip_10"
+		android:text="asdfasf asdf asdfas df asdf asd fasd fasdf sadf asfdas dfsadfas df asdf asfd"
+		style="@style/Font15NormalBlack" />
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dip_20"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/btnLoadOrder"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_orange_large"
+			android:text="Return"
+			android:gravity="center"
+			android:layout_centerVertical="true"
+			style="@style/Font20NormalWhite" />
+		<Button
+			android:id="@+id/btnReturn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/btn_button_grey_large"
+			android:text="Return"
+			style="@style/Font20NormalWhite"
+			android:layout_centerVertical="true" />
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/btnReturn"
+		    android:layout_toLeftOf="@+id/btnLoadOrder"
+		    android:layout_centerVertical="true">
+		    <dsd.dsdvansales.views.ClickEffectImageView
+			android:id="@+id/btnSlip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:src="@drawable/icon_has_presold"
+			android:layout_centerVertical="true" />
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>
