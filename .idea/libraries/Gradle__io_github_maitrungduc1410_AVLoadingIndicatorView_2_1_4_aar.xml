@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.maitrungduc1410:AVLoadingIndicatorView:2.1.4@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2acf82da32de9ba912f759979fd81129/transformed/jetified-AVLoadingIndicatorView-2.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2acf82da32de9ba912f759979fd81129/transformed/jetified-AVLoadingIndicatorView-2.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2acf82da32de9ba912f759979fd81129/transformed/jetified-AVLoadingIndicatorView-2.1.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.maitrungduc1410/AVLoadingIndicatorView/2.1.4/813c3d6050b501f5928e2000588b32262733fa79/AVLoadingIndicatorView-2.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.maitrungduc1410/AVLoadingIndicatorView/2.1.4/5cda211eed79fa918c25d860e155ba834ce272af/AVLoadingIndicatorView-2.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

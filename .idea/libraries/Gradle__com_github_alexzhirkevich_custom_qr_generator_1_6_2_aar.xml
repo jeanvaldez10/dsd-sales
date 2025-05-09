@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.alexzhirkevich:custom-qr-generator:1.6.2@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/12b839a9fd7c74f8603218db68a86c39/transformed/jetified-custom-qr-generator-1.6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12b839a9fd7c74f8603218db68a86c39/transformed/jetified-custom-qr-generator-1.6.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.alexzhirkevich/custom-qr-generator/1.6.2/fa2526446de691685b6ff6542444f932dd88c56e/custom-qr-generator-1.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

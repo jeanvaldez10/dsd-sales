@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ogaclejapan.smarttablayout:library:1.6.1@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c15fa1bf36456a7fe85b0dcd763864e0/transformed/jetified-library-1.6.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c15fa1bf36456a7fe85b0dcd763864e0/transformed/jetified-library-1.6.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c15fa1bf36456a7fe85b0dcd763864e0/transformed/jetified-library-1.6.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ogaclejapan.smarttablayout/library/1.6.1/1fb717e91e5e524e467b946ee0e0b2182ebacd26/library-1.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ogaclejapan.smarttablayout/library/1.6.1/a557ec1dc81f8153f92f8c9dc3d5071a12a89df5/library-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

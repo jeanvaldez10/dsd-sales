@@ -1,0 +1,88 @@
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/drawable/btn_button_grey_large.xml" value="0.522" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout-nodpi/dialog_batch_code_input.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/about_view.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/activity_login.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/activity_main.xml" value="0.5960482985729967" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/activity_photo_detail.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/activity_signature.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/custom_alert_choice_view.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_adjust_inventory.xml" value="0.43671875" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_batch_code_input.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_customer_action.xml" value="0.3109375" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_customer_note.xml" value="0.3109375" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_driver_break.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_driver_break_count_down.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_input.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_order_delivery_option.xml" value="0.3828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_product_information.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/dialog_tour.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_add_billing_details.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_add_contact_information.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_add_contacts.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_add_equipment.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_adjust_inventory.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_collections_balancing.xml" value="0.42421875" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_contact_detail_list.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_customer_detail.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_customer_mapview.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_delivery_summary.xml" value="0.5" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_ending_inventory.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_instore.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_load_adjustments.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_load_request.xml" value="0.75" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_load_truck_bulk.xml" value="0.67" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_load_truck_customer_order_detail.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_load_truck_sign.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_loadtruck_by_customer.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_login.xml" value="0.6794354838709677" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_make_delivery.xml" value="0.41953125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_new_customer.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_new_customer_note.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_price_details.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_search_product.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_select_customer.xml" value="0.39453125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_terms_of_placement.xml" value="0.42109375" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_vehicle_inventory.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/fragment_view_previous_invoices.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/image_item.xml" value="0.42421875" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/item_batch_code.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/item_product_info.xml" value="0.453125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/main_layout.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/previous_documents_item.xml" value="0.453125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_contact_detail.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_contact_info.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_customer_note.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_make_delivery.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_make_delivery_detail_entry_1.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_make_delivery_detail_entry_2.xml" value="0.7828125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_price_detail.xml" value="0.78125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_request.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/row_summary_detail.xml" value="0.453125" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/slide_row_make_delivery.xml" value="0.78515625" />
+        <entry key="..\:/AndroidWorking/DSDVanSales/app/src/main/res/layout/tour_item.xml" value="0.78515625" />
+      </map>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

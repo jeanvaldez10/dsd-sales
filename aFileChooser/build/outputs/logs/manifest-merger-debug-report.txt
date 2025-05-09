@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml:17:2-22:12
+INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml:17:2-22:12
+	package
+		INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml:17:12-70
+uses-sdk
+INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml
+INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Projects\2025\DSDVanSales\aFileChooser\src\main\AndroidManifest.xml

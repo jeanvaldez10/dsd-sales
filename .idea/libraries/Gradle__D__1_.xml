@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: D (1)" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/537448b04dccb4ebcc79d54859c24d22/transformed/jetified-hsm-android-print/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/537448b04dccb4ebcc79d54859c24d22/transformed/jetified-hsm-android-print/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/537448b04dccb4ebcc79d54859c24d22/transformed/jetified-hsm-android-print/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

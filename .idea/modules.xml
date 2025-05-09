@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DSDVanSales.iml" filepath="$PROJECT_DIR$/.idea/modules/DSDVanSales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PaymentModule-0.6.2/DSDVanSales.PaymentModule-0.6.2.iml" filepath="$PROJECT_DIR$/.idea/modules/PaymentModule-0.6.2/DSDVanSales.PaymentModule-0.6.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.iml" filepath="$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.main.iml" filepath="$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/aFileChooser/DSDVanSales.aFileChooser.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DSDVanSales.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolon_pdf/DSDVanSales.bixolon_pdf.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolon_pdf/DSDVanSales.bixolon_pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/filepicker/DSDVanSales.filepicker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-core/DSDVanSales.lib-core.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-manipulation/DSDVanSales.lib-manipulation.unitTest.iml" />
+    </modules>
+  </component>
+</project>
